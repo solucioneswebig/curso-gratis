@@ -1,5 +1,5 @@
 <?php 
-$url_sitio    = $ruta_second."/views/curso/";
+//$url_sitio    = $ruta_second."/views/curso/";
 
 ?>
  <!DOCTYPE html>
@@ -54,15 +54,7 @@ $url_sitio    = $ruta_second."/views/curso/";
     <script src='https://www.google.com/recaptcha/api.js'></script>
     <!-- JQUERY -->
     <script src="<?php echo $url_sitio; ?>assets/js/jquery.min.js"></script>
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-154702279-1"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
     
-      gtag('config', 'UA-154702279-1');
-    </script>
 </head>
 <body>
 

@@ -17,12 +17,16 @@ if(isset($_GET["slug"])){
 
 	$rutas = explode("/", $_GET["slug"]);
 
+if($rutas[0]=="confirmacion"){
+	include "modules/confirmacion.php";
+}else{
+	include "modules/404.php";
+}
 
 }else{
-
-
 		include "modules/home.php";
 	
 }
+
 
 include "includes/footer.php";
