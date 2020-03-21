@@ -18,32 +18,35 @@ $url_sitio    = ctrRuta();
 
 
    
-                echo $date = date("Y-m-d H:m:s");
+                $date = date("Y-m-d H:m:s");
 
+                if(isset($_POST["check_cliente"])){
+                    $cliente = 1;
+                }else{
+                    $cliente = 0;
+                }
 
-                /*
                 $data = [
                     "id_registrocurso"       => 0,
-                    "name_registrocurso"     => $obtener_id_banda[0],
-                    "negocio_registrocurso"  => $_POST["nombre_integrante"],
-                    "email_registrocurso"    => $_POST["cedula_integrante"],
-                    "code_registrocurso"     => $_POST["instagram_integrante"],
-                    "view_registrocurso"     => $_POST["celular_integrante"],
-                    "cliente_registrocurso"  => 0,
-                    "estatus_registrocurso"  => 0,
-                    "date_registrocurso"     => 1
+                    "name_registrocurso"     => $_POST["name"],
+                    "negocio_registrocurso"  => $_POST["negocio"],
+                    "email_registrocurso"    => $_POST["email"],
+                    "code_registrocurso"     => generarCodigo(8),
+                    "view_registrocurso"     => 0,
+                    "cliente_registrocurso"  => $cliente,
+                    "estatus_registrocurso"  => 1,
+                    "date_registrocurso"     => $date
                 ];
             
 
-                    $guardar = insert("tb_registro_curso",$data);
+                $guardar = insert("tb_registro_curso",$data);
 
-                    if($guardar):
-                        echo 1;
-                    else:
-                        echo 0;
-                    endif;
-                
-                 */
+                if($guardar):
+                    echo 1;
+                else:
+                    echo 0;
+                endif;
+      
         
         }
 
