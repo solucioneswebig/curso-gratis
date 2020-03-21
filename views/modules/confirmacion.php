@@ -47,12 +47,6 @@
     <link rel="profile" href="http://gmpg.org/xfn/11" />
     
     
-    
-    
-    
-    
-    <script src='https://www.google.com/recaptcha/api.js'></script>
-    <!-- JQUERY -->
     <script src="<?php echo $url_sitio; ?>assets/js/jquery.min.js"></script>
    
 </head>

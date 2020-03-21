@@ -88,22 +88,22 @@
         		<h6 class="text-center text-white sub-title2">En este Curso Online es 100% práctico, lo podrás ver desde tu casa o negocio, aprenderás a usar las Herramientas que Ofrece FACEBOOK para promover tu negocio, productos o servicios.</h6>
                  
                	<div class="col-md-12 m-auto">
-        		<form>
+        		<form class="form_enviar"> 
         			<div class="form-group">
-				    <input type="text" class="form-control" id="exampleInputPassword1" placeholder="Nombre">
+				    <input type="text" class="form-control" id="exampleInputPassword1" name="name" placeholder="Nombre">
 				  </div>
 				  <div class="form-group">
-				    <input type="text" class="form-control" id="exampleInputPassword1" placeholder="Negocio">
+				    <input type="text" class="form-control" id="exampleInputPassword1" name="negocio" placeholder="Negocio">
 				  </div>
 				  <div class="form-group">
-				    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="E-mail">
+				    <input type="email" class="form-control" id="exampleInputEmail1" name="email" placeholder="E-mail">
 				  </div>
 				  <div class="form-check">
-				    <input type="checkbox" class="form-check-input" id="exampleCheck1">
+				    <input type="checkbox" class="form-check-input" name="check_cliente" id="exampleCheck1">
 				    <label class="form-check-label text-white" for="exampleCheck1"> Soy Cliente de Directorio El Regional o Webx.mx (Opcional)</label>
 				  </div>
 				  <div class="form-check">
-				    <input type="checkbox" class="form-check-input" id="exampleCheck1">
+				    <input type="checkbox" class="form-check-input" name="check_terminos" id="exampleCheck1">
 				    <label class="form-check-label text-white" for="exampleCheck1"> He leído y acepto la <a href="https://webx.mx/politica-privacidad" class="text-warning"> política de privacidad.</a></label>
 				  </div>
 				</form>
@@ -111,7 +111,7 @@
 	
 
 			<div class="col-md-12 text-center py-3">
-					<button class="text-white btn-footer">Quiero Acceder al Curso</button>
+					<button class="text-white btn-footer" id="boton_guardar">Quiero Acceder al Curso</button>
 			</div>
         	</div>
         </div>

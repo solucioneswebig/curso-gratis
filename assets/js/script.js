@@ -1,3 +1,4 @@
+var ruta_servidor = "http://"+document.domain+"/curso-gratis/";
 $( document ).ready(function() {
 $('.owl-carousel').owlCarousel({
     loop:true,
@@ -25,6 +26,14 @@ $("a").on("click", function(e){
     $("html, body").animate({
         scrollTop: 0
     }, 1000); 
+});
+
+$("#boton_guardar").click( function() { 
+$.post(ruta_servidor+"assets/ajax/enviar.php",$(".form_enviar").serialize(),function(res){
+
+     console.log(res)
+ });
+
 });
 
 })
