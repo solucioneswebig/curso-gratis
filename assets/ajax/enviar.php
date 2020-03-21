@@ -44,11 +44,11 @@ if(isset($_POST["name"])){
         if($guardar):
             
             $cabecera = '<h3>Hola '.$_POST["name"].'<h3>
-            <p style="text-align:justify;">Muchas gracias por solicitar acceso al CURSO ONLINE "Las 3 estrategias para promocionar mi Negocio en Facebook y poder aumentar las ventas en 2020".
+            <p style="text-align:justify;">Muchas gracias por solicitar acceso al CURSO ONLINE <h5>"Las 3 estrategias para promocionar mi Negocio en Facebook y poder aumentar las ventas en 2020"</h5>.
             Para acceder al CURSO primero necesitamos que confirmes tu dirección de correo electrónico y hagas clic en el siguiente botón:</p>
             ';
 
-            $boton = '<a href="'.$url_sitio.'video-curso/'.$code.'" style="font-size:20px;padding:15px 20px;border:2px solid #999;color:#999;width: 90% !important;display: block;text-align: center;">Confirmo y quiero acceder al CURSO ahora >> </a>';
+            $boton = '<a href="'.$url_sitio.'video-curso/'.$code.'" style="font-size:20px;padding:15px 20px;border:2px solid orange;color:#fff;background:orange;width: 90% !important;display: block;text-align: center;">Confirmo y quiero acceder al CURSO ahora >> </a>';
 
 
             $piecorreo = '<p style="text-align:left;">Hay veces que la gente se apunta a los sitios con correos falsos y esto es una medida para evitar el spam.</p> 
