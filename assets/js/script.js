@@ -1,4 +1,4 @@
-var ruta_servidor = "http://"+document.domain+"/curso-gratis/";
+var ruta_servidor = "http://"+document.domain+"/views/curso/";
 $( document ).ready(function() {
 $('.owl-carousel').owlCarousel({
     loop:true,
