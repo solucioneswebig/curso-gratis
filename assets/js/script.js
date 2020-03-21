@@ -1,4 +1,5 @@
-var ruta_servidor = "https://"+document.domain+"/views/curso/";
+var ruta_ajax = "https://"+document.domain+"/views/curso/";
+var ruta_sitio = "https://"+document.domain+"/";
 $( document ).ready(function() {
 $('.owl-carousel').owlCarousel({
     loop:true,
@@ -30,11 +31,11 @@ $("a").on("click", function(e){
 
 $("#boton_guardar").click( function() { 
 if(validaForm_liderBanda()){
-$.post(ruta_servidor+"assets/ajax/enviar.php",$(".form_enviar").serialize(),function(res){
+$.post(ruta_ajax+"assets/ajax/enviar.php",$(".form_enviar").serialize(),function(res){
 
      console.log(res)
         if(res == 1){
-            alert("Su registro fue realizado");
+            location.href = ruta_sitio+'unete-a-una-banda';
         }
      
  });
@@ -46,11 +47,7 @@ $("#check_terminos").click(function(){
     if( $('#check_terminos').is(':checked') ) {
         $(".mensaje").html('');
     }else{
-
         $(".mensaje").html('<div class="alert alert-danger">Debe aceptar los terminos y condiciones.</div>');
-        $("#check_terminos").focus();       // Esta función coloca el foco de escritura del usuario en el campo Nombre directamente.
-        return false;
-
     }
 
 })

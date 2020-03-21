@@ -59,7 +59,7 @@
 <body>
 
 
-<section class="fondo-banner d-none d-sm-block" id="top">
+<section class="fondo-banner" id="top">
 	  <div class="container fondo-transparente">
         <div class="row">
 
@@ -125,68 +125,6 @@
 <!--FIN PC-->
 
 
-<!--PARA MOBILE-->
-<section class="fondo-banner d-block d-sm-none">
-	<div class="container-fluid fondo-transparente2">
-		<div class="row">
-			<div class="col-md-12 text-center">
-			<h3 class="text-white text-center py-2">CURSO ONLINE  <br> GRATUITO</h3>
-		</div>
-		</div>
-		<div class="row pt-2">
-			<div class="col-md-12">
-                <h3 class="titulo py-2">3 ESTRATÉGIAS PARA PROMOCIONAR MÍ NEGOCIO EN <strong class="title-form">FACEBOOK</strong></h3>
-                <h3 class="title-form text-center py-2">Y PODER AUMENTAR MIS VENTAS EN 2020.</h3>
-            </div>
-		</div>
-		 <div class="row">
-             <div class="col-md-12 text-center">
-             	  
-                <img class="imagen-principal" src="<?php echo $url_sitio; ?>assets/images/imagen-principal.png">
-            </div>
-        </div>
-        </div>
- </section>
- <section class="fondo-banner2 d-block d-sm-none">
-        <div class="container-fluid fondo-transparent">
-        	    <div class="row fila text-center justify-content-center">
-        		<h4 class="title-form">REGÍSTRATE GRATIS<br>Y ACCEDE AL CURSO⇩</h4>
-        		<h5 class="text-white">En este Curso Online es 100% práctico, lo podrás ver desde tu casa o negocio, aprenderás a usar las Herramientas que Ofrece FACEBOOK para promover tu negocio, productos o servicios.</h5>
-  
-                 </div>
-          </div>
-
-          <div class="container-fluid fondo-transparente3">
-                  <div class="row justify-content-center pt-3">
-               	<div class="col-md-12 m-auto">
-        		<form>
-        			<div class="form-group">
-				    <input type="text" class="form-control" id="exampleInputPassword1" placeholder="Nombre">
-				  </div>
-				  <div class="form-group">
-				    <input type="text" class="form-control" id="exampleInputPassword1" placeholder="Negocio">
-				  </div>
-				  <div class="form-group">
-				    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="E-mail">
-				  </div>
-				  <div class="form-check">
-				    <input type="checkbox" class="form-check-input" id="exampleCheck1">
-				    <label class="form-check-label text-white" for="exampleCheck1"> Soy Cliente de Directorio El Regional o Webx.mx (Opcional)</label>
-				  </div>
-				  <div class="form-check">
-				    <input type="checkbox" class="form-check-input" id="exampleCheck2">
-				    <label class="form-check-label text-white" for="exampleCheck2"> He leído y acepto la <a href="https://webx.mx/politica-privacidad" class="text-warning">política de privacidad.</a></label>
-				  </div>
-				</form>
-				</div>
-			</div>
-			<div class="col-md-12 text-center py-3">
-					<button class="text-white btn-footer">Quiero Acceder al Curso</button>
-			</div>
-        	</div>
-          </div>
- </section>
-<!--FIN MOBILE-->
 
 
 
