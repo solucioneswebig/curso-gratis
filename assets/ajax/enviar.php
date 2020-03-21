@@ -48,7 +48,7 @@ if(isset($_POST["name"])){
             Para acceder al CURSO primero necesitamos que confirmes tu dirección de correo electrónico y hagas clic en el siguiente botón:</p>
             ';
 
-            $boton = '<a href="'.$url_sitio.'video-curso/'.$code.'" style="font-size:20px;padding:15px 20px;border:2px solid #999;color:#999;">Confirmo y quiero acceder al CURSO ahora >> </a>';
+            $boton = '<a href="'.$url_sitio.'video-curso/'.$code.'" style="font-size:20px;padding:15px 20px;border:2px solid #999;color:#999;width: 90% !important;display: block;text-align: center;">Confirmo y quiero acceder al CURSO ahora >> </a>';
 
 
             $piecorreo = '<p style="text-align:left;">Hay veces que la gente se apunta a los sitios con correos falsos y esto es una medida para evitar el spam.</p> 
