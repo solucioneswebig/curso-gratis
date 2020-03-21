@@ -107,7 +107,10 @@
 				    <label class="form-check-label text-white" for="check_terminos"> He leído y acepto la <a href="https://webx.mx/politica-privacidad" class="text-warning"> política de privacidad.</a></label>
 				  </div>
 				</form>
+				<div class="form-group">
 				<div class="mensaje">
+				</div>
+				
 				</div>
 				</div>
 	

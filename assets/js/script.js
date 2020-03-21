@@ -45,16 +45,21 @@ function validaForm_liderBanda(){
       $(".mensaje").html('<div class="alert alert-danger">Su nombre es requerido.</div>');
       $("#name_form").focus();       // Esta función coloca el foco de escritura del usuario en el campo Nombre directamente.
       return false;
+    }else{
+        $(".mensaje").html('');
     }
   
     if($("#correo_form").val() == ""){
         $(".mensaje").html('<div class="alert alert-danger">Su correo es requerido.</div>');
         $("#correo_form").focus();       // Esta función coloca el foco de escritura del usuario en el campo Nombre directamente.
         return false;
+    }else{
+        $(".mensaje").html('');
     }
     
 
     if( $('#check_terminos').is(':checked') ) {
+        $(".mensaje").html('');
     }else{
 
         $(".mensaje").html('<div class="alert alert-danger">Debe aceptar los terminos y condiciones.</div>');
