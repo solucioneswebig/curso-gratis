@@ -35,7 +35,7 @@ $.post(ruta_ajax+"assets/ajax/enviar.php",$(".form_enviar").serialize(),function
 
      console.log(res)
         if(res == 1){
-            location.href = ruta_sitio+'unete-a-una-banda';
+            location.href = ruta_sitio+'confirmacion';
         }
      
  });
