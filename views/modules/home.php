@@ -90,23 +90,25 @@
                	<div class="col-md-12 m-auto">
         		<form class="form_enviar"> 
         			<div class="form-group">
-				    <input type="text" class="form-control" id="exampleInputPassword1" name="name" placeholder="Nombre">
+				    <input type="text" class="form-control" id="name_form" name="name" placeholder="Nombre">
 				  </div>
 				  <div class="form-group">
-				    <input type="text" class="form-control" id="exampleInputPassword1" name="negocio" placeholder="Negocio">
+				    <input type="text" class="form-control" id="" name="negocio" placeholder="Negocio">
 				  </div>
 				  <div class="form-group">
-				    <input type="email" class="form-control" id="exampleInputEmail1" name="email" placeholder="E-mail">
+				    <input type="email" class="form-control" id="correo_form" name="email" placeholder="E-mail">
 				  </div>
 				  <div class="form-check">
 				    <input type="checkbox" class="form-check-input" name="check_cliente" id="exampleCheck1">
 				    <label class="form-check-label text-white" for="exampleCheck1"> Soy Cliente de Directorio El Regional o Webx.mx (Opcional)</label>
 				  </div>
 				  <div class="form-check">
-				    <input type="checkbox" class="form-check-input" name="check_terminos" id="exampleCheck1">
-				    <label class="form-check-label text-white" for="exampleCheck1"> He leído y acepto la <a href="https://webx.mx/politica-privacidad" class="text-warning"> política de privacidad.</a></label>
+				    <input type="checkbox" class="form-check-input" name="check_terminos" id="check_terminos">
+				    <label class="form-check-label text-white" for="check_terminos"> He leído y acepto la <a href="https://webx.mx/politica-privacidad" class="text-warning"> política de privacidad.</a></label>
 				  </div>
 				</form>
+				<div class="mensaje">
+				</div>
 				</div>
 	
 
