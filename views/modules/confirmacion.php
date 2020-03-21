@@ -72,8 +72,8 @@
 <section class="py-3">
     <div class="container">
         <div class="row justify-content-center">
-           <div class="col-md-4 py-2">
-               <img class="imagen-principal" src="<?php echo $url_sitio; ?>assets/images/flechas.png">
+           <div class="col-md-12 py-2 text-center">
+               <img class="imagen-principal" src="<?php echo $url_sitio; ?>assets/images/flechas.png" style="max-width:280px;">
            </div>
         </div>
         <div class="row justify-content-center">
@@ -81,6 +81,11 @@
               <h4 class="text-center">¡ATENCIÓN! << Te llegará un email como este en <strong class="linea">los próximos 5 minutos </strong> >></h4>
                 <h4 class="text-center py-2">Revisa tu <strong class="linea">bandeja de entrada</strong> y haz click en el enlace para confirmar tu email y acceder a la CURSO ONLINE :</h4>
            </div>
+        </div>
+        <div class="row justify-content-center">
+          <div class="col-md-8">
+            <img class="img-fluid shadow" src="<?php echo $url_sitio; ?>assets/images/imagen-correo.png">
+          </div>
         </div>
     </div>
 </section>
