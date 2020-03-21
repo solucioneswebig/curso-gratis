@@ -69,7 +69,7 @@ if(isset($_POST["name"])){
             if($correo){
                 echo "enviado";
             }else{
-                echo "no enviado";
+                echo $data["correo"];
             }
 
 
