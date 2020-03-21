@@ -64,13 +64,9 @@ if(isset($_POST["name"])){
 
             ];
 
-            $correo = enviar_correo($data);
+           echo $correo = enviar_correo($data);
 
-            if($correo){
-                echo "enviado";
-            }else{
-                echo $data["piecorreo"];
-            }
+  
 
 
         else:
