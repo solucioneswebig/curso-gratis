@@ -60,17 +60,17 @@
         <img class="img-fluid logo-confirmacion" src="<?php echo $url_sitio; ?>assets/images/logo-webx-blanco.png">
       </div>
     </div>
-    <div class="row justify-content-center pt-4">
-      <div class="col-md-6">
-          <h2 class="text-center text-white text-completa">COMPLETA EL ÚLTIMO PASO PARA ACCEDER AHORA AL CURSO ONLINE.</h2>   
-      </div>
-    </div>
   </div>
 </section>
 
 
 <section class="py-3">
     <div class="container">
+        <div class="row justify-content-center pt-4">
+          <div class="col-md-6">
+              <h2 class="text-center text-completa">COMPLETA EL ÚLTIMO PASO PARA ACCEDER AHORA AL CURSO ONLINE.</h2>   
+          </div>
+        </div>
         <div class="row justify-content-center">
            <div class="col-md-12 py-2 text-center">
                <img class="imagen-principal img-fluid" src="<?php echo $url_sitio; ?>assets/images/flechas.png" style="max-width:280px;">
