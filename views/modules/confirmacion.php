@@ -2,7 +2,7 @@
 //$url_sitio    = $ruta_second."/views/curso/";
 
 ?>
- <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="es">
 <head>
     <meta charset="UTF-8" />

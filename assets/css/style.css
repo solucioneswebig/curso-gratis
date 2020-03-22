@@ -276,7 +276,8 @@ background-color: #1a363d;
 }
 
 .text-completa{
-  font-size: 24px;
+  font-size: 28px;
+  font-weight: bold;
 }
 
 @media(min-width: 1024px){
@@ -286,7 +287,7 @@ background-color: #1a363d;
     padding: 20px 26px;
 }  
 .text-completa{
-  font-size: 38px;
+  font-size: 44px;
 } 
 .logo-confirmacion{
   max-width: 380px;
