@@ -1,5 +1,5 @@
 var ruta_ajax = "https://"+document.domain+"/views/curso/";
-var ruta_sitio = "https://"+document.domain+"/";
+var ruta_sitio = "https://"+document.domain+"/curso-gratis/";
 $( document ).ready(function() {
 $('.owl-carousel').owlCarousel({
     loop:true,
@@ -36,6 +36,8 @@ $.post(ruta_ajax+"assets/ajax/enviar.php",$(".form_enviar").serialize(),function
      console.log(res)
         if(res == 1){
             location.href = ruta_sitio+'confirmacion';
+        }else{
+            alert("Error al enviar  el correo");
         }
      
  });
@@ -77,7 +79,9 @@ $("#correo_form").keyup(function(){
     
 })
 
-
+$("#area_video").click(function(){
+    console.log("Por aqui");
+})
 
 })
 

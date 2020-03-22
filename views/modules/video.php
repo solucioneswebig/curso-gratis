@@ -72,10 +72,10 @@
               <h3 class="text-center text-warning pt-4">Y PODER DUPLICAR TUS VENTAS EN 2020.</h3>   
           </div>
         </div>
-        <div class="row py-3 justify-content-center">
+        <div class="row py-3 justify-content-center" id="area_video">
           <div class="col-md-10">
             <div class="embed-responsive embed-responsive-16by9">
-              <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/zpOULjyy-n8?rel=0" allowfullscreen></iframe>
+              <iframe class="embed-responsive-item"  src="https://www.youtube.com/embed/zpOULjyy-n8?rel=0" allowfullscreen></iframe>
             </div>
           </div>
         </div>
