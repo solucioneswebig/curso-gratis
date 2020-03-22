@@ -94,11 +94,50 @@
     background-repeat: no-repeat;
 }
 
+.text-name1{
+  font-size: 28px !important;
+}
+
 .fondo-principal{
   background-color: #a2a2a2 !important;
 }
 
+.boton-comprar{
+      color: #FFFFFF;
+    font-size: 24px;
+    font-weight: 800;
+    text-transform: uppercase;
+    background-color: #23A455;
+    border-style: solid;
+    border-width: 1px 1px 1px 1px;
+    border-radius: 25px 25px 25px 25px;
+    padding: 15px 45px 15px 45px;
+}
 
+.boton-comprar:hover {
+  color: #00ce1b;
+    background-color: rgba(0,206,27,0);
+    border-color: #00ce1b;
+        transform: scale(1.1);
+}
+
+.texto {
+    font-size: 24px;
+}
+
+.tex-mediano {
+    font-size: 30px;
+    font-weight: 700;
+}
+
+.text-grande {
+    font-size: 38px;
+    font-weight: 800;
+}
+
+.text-pequeno {
+    font-size: 25px;
+}
 
 .logo{
   width: 20% !important;
@@ -291,6 +330,28 @@ background-color: #1a363d;
 } 
 .logo-confirmacion{
   max-width: 380px;
+}
+
+.texto{
+  font-size: 30px;
+}
+
+.text-grande{
+  font-size: 60px;
+      font-weight: 800;
+}
+
+.text-pequeno{
+  font-size: 40px;
+}
+
+.tex-mediano {
+    font-size: 50px;
+    font-weight: 700;
+}
+
+.pequeno{
+  font-size: 12px
 }
 
 .fondo-banner2 {

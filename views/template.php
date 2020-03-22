@@ -19,6 +19,10 @@ if(isset($_GET["slug"])){
 
 if($rutas[0]=="confirmacion"){
 	include "modules/confirmacion.php";
+
+}else if($rutas[0]=="video"){
+	include "modules/video.php";
+
 }else{
 	include "modules/404.php";
 }
