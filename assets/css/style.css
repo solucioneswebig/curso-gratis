@@ -271,14 +271,27 @@ background-color: #1a363d;
   height: auto;
 }
 
+.logo-confirmacion{
+  max-width: 220px;
+}
 
+.text-completa{
+  font-size: 24px;
+}
 
 @media(min-width: 1024px){
 .fondo-transparente2 {
     background-color: #2c435099;
     height: auto;
     padding: 20px 26px;
-}    
+}  
+.text-completa{
+  font-size: 38px;
+} 
+.logo-confirmacion{
+  max-width: 380px;
+}
+
 .fondo-banner2 {
     background-image: url(../images/fondo-banner.jpg);
     width: 100%;
