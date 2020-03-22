@@ -355,6 +355,11 @@
 
 <section class="footer">
 	<div class="container">
+  <div class="row justify-content-center">
+      <div class="col-md-3 text-center">
+        <img class="img-fluid logo-confirmacion" src="<?php echo $url_sitio; ?>assets/images/logo-webx-blanco.png" style="max-width:180px;width:50%;">
+      </div>
+    </div>
 		<div class="row">
 			<div class="col-md-12">
 				<p class="text-center pb-3"><?php echo date("Y"); ?> Todos los derechos reservados. – WEBX.MX</p>
