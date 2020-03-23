@@ -82,6 +82,7 @@
         <div class="row py-3 justify-content-center">
            <div class="col-md-12 py-2 text-center">
                <img class="imagen-principal img-fluid" src="<?php echo $url_sitio; ?>assets/images/flechas.png" style="max-width:350px;">
+               <input type="text" id="contador_pregunta_toda">
            </div>
         </div>
     </div>
@@ -348,5 +349,21 @@
 
   <script src="<?php echo $url_sitio; ?>assets/js/script.js"></script>
 
+  <script type="text/javascript">
+$(document).ready(function() {	
+
+	var segundos = 0;
+    function segundos_funcion() {
+		segundos = segundos + 1;
+		$("#contador_pregunta_toda").val(segundos);
+    }
+	setInterval(segundos_funcion, 1000);
+
+
+
+
+	
+});
+</script>
 </body>
 </html>
