@@ -354,7 +354,10 @@ $(document).ready(function() {
 
 	var segundos = 0;
     function segundos_funcion() {
-		segundos = segundos + 1;
+    segundos = segundos + 1;
+    if(segundos == 20){
+        alert("Paso el tiempo");
+    }
 		$("#contador_pregunta_toda").val(segundos);
     }
 	setInterval(segundos_funcion, 1000);
