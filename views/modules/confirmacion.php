@@ -92,9 +92,9 @@
 
 <section>
 <div class="container">
-  <div class="row">
+  <div class="row py-5">
     <div class="col-md-12 text-center">
-      <p class="">Has click para regresar a la web</p>
+      <p class="" style="color: #ff520e;font-weight: bold;font-size: 24px;">Has click para regresar a la web</p>
       <a href="https://webx.mx/curso-gratis/" class="btn btn-success">Regresar a la web >></a>
     </div>
   </div>
