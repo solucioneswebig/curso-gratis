@@ -346,7 +346,7 @@
 			
 		<div class="row justify-content-center m-auto pt-3">
 			<div class="col-md-12 text-center">
-				<a class="text-white text-center btn-footer" href="#top">QUIERO ACCEDER AL CURSO AHORA>></a>
+				<a class="text-white text-center btn-footer btn-top" href="#top">QUIERO ACCEDER AL CURSO AHORA>></a>
 			</div>
 		</div>
 	</div>

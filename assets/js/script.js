@@ -22,7 +22,7 @@ $('.owl-carousel').owlCarousel({
     }
 })
 
-$("a").on("click", function(e){
+$(".btn-top").on("click", function(e){
     e.preventDefault();
     $("html, body").animate({
         scrollTop: 0
