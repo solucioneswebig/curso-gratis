@@ -90,6 +90,18 @@
     </div>
 </section>
 
+<section>
+<div class="container">
+  <div class="row">
+    <div class="col-md-12 text-center">
+      <p class="">Has click para regresar a la web</p>
+      <a href="https://webx.mx/curso-gratis/" class="btn btn-success">Regresar a la web >></a>
+    </div>
+  </div>
+</div>
+
+</section>
+
 <section class="red">
     <div class="container">
         <div class="row justify-content-center py-4">
