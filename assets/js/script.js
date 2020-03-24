@@ -45,13 +45,11 @@ $.post(ruta_ajax+"assets/ajax/enviar.php",$(".form_enviar").serialize(),function
 });
 
     function guadar_video(){ 
-    if(validaForm_liderBanda()){
     $.post(ruta_ajax+"assets/ajax/enviar.php",$(".form_enviar_video").serialize(),function(res){
     
          console.log(res)
          
      });
-    }
     };
 
     var segundos = 0;
