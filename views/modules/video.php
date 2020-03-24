@@ -82,7 +82,7 @@
         <div class="row py-3 justify-content-center">
            <div class="col-md-12 py-2 text-center">
                <img class="imagen-principal img-fluid" src="<?php echo $url_sitio; ?>assets/images/flechas.png" style="max-width:350px;">
-               <input type="text" id="contador_pregunta_toda">
+               
            </div>
         </div>
     </div>
@@ -356,7 +356,7 @@ else:
 
 <input type="hidden" name="code_registrocurso" value="<?php echo $obtener_dato['code_registrocurso']; ?>">
 <input type="hidden" name="id_registrocurso" value="<?php echo $obtener_dato['id_registrocurso']; ?>">
-<input type="hidden" name="view_registrocurso" value="1">
+<input type="hidden" name="view_registrocurso" value="1" id="contador_pregunta_toda">
 
 <input type="hidden" name="guardar_video" value="1">
 
