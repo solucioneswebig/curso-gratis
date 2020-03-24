@@ -83,7 +83,16 @@ if(isset($_POST["name"])){
 
 
 if(isset($_POST["guardar_video"])){
+    $date = date("Y-m-d H:m:s");
+    $data = [
+        "view_registrocurso" => 1,
+        "date_modified"      => $date
+    ];
 
-    echo 1;
+    $where = [
+        "id_registrocurso" => $_POST["id_registrocurso"]
+    ];
+
+    $actualizar = update('tb_registro_curso',$where,$data);
     
 }
