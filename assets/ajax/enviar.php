@@ -94,5 +94,11 @@ if(isset($_POST["guardar_video"])){
     ];
 
     $actualizar = update('tb_registro_curso',$where,$data);
+
+    if($actualizar){
+        echo 1;
+    }else{
+        echo 0;
+    }
     
 }
