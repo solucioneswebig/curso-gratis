@@ -35,7 +35,8 @@ if(isset($_POST["name"])){
             "view_registrocurso"     => 0,
             "cliente_registrocurso"  => $cliente,
             "estatus_registrocurso"  => 1,
-            "date_registrocurso"     => $date
+            "date_registrocurso"     => $date,
+            "date_modified"          => "0000-00-00 00:00:00"
         ];
     
 
@@ -79,3 +80,10 @@ if(isset($_POST["name"])){
 
 }
 
+
+
+if(isset($_POST["guardar_video"])){
+
+    echo 1;
+    
+}

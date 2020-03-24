@@ -347,15 +347,21 @@
 
 
 $obtener_dato = select_one("SELECT * FROM tb_registro_curso WHERE code_registrocurso = '".$rutas[2]."'");
-var_dump($obtener_dato);
+if(!$obtener_dato):
+header("Location: https:webx.mx/curso-gratis/debe-registrarse");
+else:
 ?>
 
-<form action="">
+<form action="" class="form_enviar_video">
 
-<input type="hidden" name="code_video" value="<?php echo $rutas[2]; ?>">
+<input type="hidden" name="code_registrocurso" value="<?php echo $obtener_dato['code_registrocurso']; ?>">
+<input type="hidden" name="id_registrocurso" value="<?php echo $obtener_dato['id_registrocurso']; ?>">
+<input type="hidden" name="view_registrocurso" value="<?php echo $obtener_dato['view_registrocurso']; ?>">
 
+<input type="hidden" name="guardar_video" id="boton_guardar_video">
 </form>
 
+<?php endif; ?>
 
   <script src="<?php echo $url_sitio; ?>extensions/bootstrap/js/bootstrap.js"></script>
   <script src="<?php echo $url_sitio; ?>extensions/owl/dist/owl.carousel.js"></script>
@@ -371,11 +377,11 @@ $(document).ready(function() {
     function segundos_funcion() {
     segundos = segundos + 1;
     if(segundos == 20){
-        alert("Paso el tiempo");
+       $("#boton_guardar_video").click();
     }
 		$("#contador_pregunta_toda").val(segundos);
     }
-	setInterval(segundos_funcion, 1000);
+  	setInterval(segundos_funcion, 1000);
 
 });
 </script>

@@ -44,6 +44,16 @@ $.post(ruta_ajax+"assets/ajax/enviar.php",$(".form_enviar").serialize(),function
 }
 });
 
+$("#boton_guardar_video").click( function() { 
+    if(validaForm_liderBanda()){
+    $.post(ruta_ajax+"assets/ajax/enviar.php",$(".form_enviar_video").serialize(),function(res){
+    
+         console.log(res)
+         
+     });
+    }
+    });
+
 $("#check_terminos").click(function(){
 
     if( $('#check_terminos').is(':checked') ) {
