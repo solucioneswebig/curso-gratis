@@ -346,7 +346,7 @@
 
 
 
-$obtener_dato = select_one("SELECT * FROM tb_registro_curso WHERE code_registrocurso = ".$rutas[2]."");
+$obtener_dato = select_one("SELECT * FROM tb_registro_curso WHERE code_registrocurso = '".$rutas[2]."'");
 var_dump($obtener_dato);
 ?>
 
