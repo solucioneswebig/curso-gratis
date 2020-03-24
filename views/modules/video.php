@@ -358,7 +358,7 @@ else:
 <input type="hidden" name="id_registrocurso" value="<?php echo $obtener_dato['id_registrocurso']; ?>">
 <input type="hidden" name="view_registrocurso" value="<?php echo $obtener_dato['view_registrocurso']; ?>">
 
-<input type="hidden" name="guardar_video" value="true">
+<input type="hidden" name="guardar_video" value="1">
 
 </form>
 <button type="button" id="boton_guardar_video" style="display:none;">Enviar</button>
@@ -371,20 +371,6 @@ else:
 
   <script src="<?php echo $url_sitio; ?>assets/js/script.js"></script>
 
-  <script type="text/javascript">
-$(document).ready(function() {	
 
-	var segundos = 0;
-    function segundos_funcion() {
-    segundos = segundos + 1;
-    if(segundos == 20){
-       $("#boton_guardar_video").click();
-    }
-		$("#contador_pregunta_toda").val(segundos);
-    }
-  	setInterval(segundos_funcion, 1000);
-
-});
-</script>
 </body>
 </html>

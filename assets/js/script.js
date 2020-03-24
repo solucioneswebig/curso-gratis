@@ -44,7 +44,7 @@ $.post(ruta_ajax+"assets/ajax/enviar.php",$(".form_enviar").serialize(),function
 }
 });
 
-$("#boton_guardar_video").click( function() { 
+    function guadar_video(){ 
     if(validaForm_liderBanda()){
     $.post(ruta_ajax+"assets/ajax/enviar.php",$(".form_enviar_video").serialize(),function(res){
     
@@ -52,7 +52,17 @@ $("#boton_guardar_video").click( function() {
          
      });
     }
-    });
+    };
+
+    var segundos = 0;
+    function segundos_funcion() {
+    segundos = segundos + 1;
+    if(segundos == 20){
+        guadar_video();
+    }
+		$("#contador_pregunta_toda").val(segundos);
+    }
+  	setInterval(segundos_funcion, 1000);   
 
 $("#check_terminos").click(function(){
 
