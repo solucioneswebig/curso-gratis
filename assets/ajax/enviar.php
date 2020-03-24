@@ -85,7 +85,7 @@ if(isset($_POST["name"])){
 if(isset($_POST["guardar_video"])){
     $date = date("Y-m-d H:m:s");
     $data = [
-        "view_registrocurso" => 1,
+        "view_registrocurso" => $_POST["view_registrocurso"],
         "date_modified"      => $date
     ];
 
