@@ -4,6 +4,9 @@ $url_sitio    = ctrRuta();
 $url_servidor = ctrRuta(); 
 
 
+
+
+
 $title = "CURSO ONLINE GRATUITO";
 
 include "includes/header.php";
@@ -21,6 +24,8 @@ if($rutas[0]=="confirmacion"){
 	include "modules/confirmacion.php";
 
 }else if($rutas[0]=="video"){
+
+
 	include "modules/video.php";
 
 }else{

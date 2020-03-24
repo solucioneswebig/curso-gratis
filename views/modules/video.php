@@ -1,6 +1,6 @@
 <?php 
 //$url_sitio    = $ruta_second."/views/curso/";
-require "../../../models/funciones-bd.php";
+
 ?>
 <!DOCTYPE html>
 <html lang="es">
@@ -343,6 +343,8 @@ require "../../../models/funciones-bd.php";
 
 
 <?php 
+
+
 
 $obtener_dato = select_one("SELECT * FROM tb_registro_curso WHERE code_registrocurso = ".$rutas[2]."");
 var_dump($obtener_dato);
