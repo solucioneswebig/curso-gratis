@@ -358,9 +358,10 @@ else:
 <input type="hidden" name="id_registrocurso" value="<?php echo $obtener_dato['id_registrocurso']; ?>">
 <input type="hidden" name="view_registrocurso" value="<?php echo $obtener_dato['view_registrocurso']; ?>">
 
-<input type="hidden" name="guardar_video" id="boton_guardar_video">
-</form>
+<input type="hidden" name="guardar_video" value="true">
 
+</form>
+<button type="button" id="boton_guardar_video" style="display:none;">Enviar</button>
 <?php endif; ?>
 
   <script src="<?php echo $url_sitio; ?>extensions/bootstrap/js/bootstrap.js"></script>
