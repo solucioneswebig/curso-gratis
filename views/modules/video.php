@@ -1,6 +1,6 @@
 <?php 
 //$url_sitio    = $ruta_second."/views/curso/";
-include "../../models/funciones-bd.php";
+require "../../models/funciones-bd.php";
 ?>
 <!DOCTYPE html>
 <html lang="es">
