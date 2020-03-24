@@ -24,7 +24,7 @@ if(isset($_POST["name"])){
             $cliente = 0;
         }
 
-        $code = generarCodigo(14);
+        $code = generarCodigo(7).$id_registrocurso."x";
 
         $data = [
             "id_registrocurso"       => $id_registrocurso,

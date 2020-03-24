@@ -342,6 +342,19 @@
 </section>
 
 
+<?php 
+
+$obtener_dato = select_one("SELECT * FROM tb_registro_curso WHERE code_registrocurso = ".$rutas[2]."");
+var_dump($obtener_dato);
+?>
+
+<form action="">
+
+<input type="hidden" name="code_video" value="<?php echo $rutas[2]; ?>">
+
+</form>
+
+
   <script src="<?php echo $url_sitio; ?>extensions/bootstrap/js/bootstrap.js"></script>
   <script src="<?php echo $url_sitio; ?>extensions/owl/dist/owl.carousel.js"></script>
   <!-- Datatable -->
@@ -362,10 +375,6 @@ $(document).ready(function() {
     }
 	setInterval(segundos_funcion, 1000);
 
-
-
-
-	
 });
 </script>
 </body>
