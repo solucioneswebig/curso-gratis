@@ -55,10 +55,8 @@ $.post(ruta_ajax+"assets/ajax/enviar.php",$(".form_enviar").serialize(),function
     var segundos = 0;
     function segundos_funcion() {
     segundos = segundos + 1;
-    if(segundos == 20){
-        guadar_video();
-    }
-		$("#contador_pregunta_toda").val(segundos);
+    $("#contador_pregunta_toda").val(segundos);
+    guadar_video();
     }
   	setInterval(segundos_funcion, 1000);   
 
