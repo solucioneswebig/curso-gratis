@@ -354,7 +354,7 @@ else:
 
 <form action="" class="form_enviar_video">
 
-<input type="hidden" name="code_registrocurso" value="<?php echo $obtener_dato['code_registrocurso']; ?>">
+<input type="hidden" name="code_registrocurso" id="code_registrocurso" value="<?php echo $obtener_dato['code_registrocurso']; ?>">
 <input type="hidden" name="id_registrocurso" value="<?php echo $obtener_dato['id_registrocurso']; ?>">
 <input type="hidden" name="view_registrocurso" value="1" id="contador_pregunta_toda">
 

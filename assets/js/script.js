@@ -47,7 +47,7 @@ $.post(ruta_ajax+"assets/ajax/enviar.php",$(".form_enviar").serialize(),function
     function guadar_video(){ 
     $.post(ruta_ajax+"assets/ajax/enviar.php",$(".form_enviar_video").serialize(),function(res){
     
-       
+        console.log(res)
          
      });
     };
@@ -57,7 +57,7 @@ $.post(ruta_ajax+"assets/ajax/enviar.php",$(".form_enviar").serialize(),function
     var segundos = 0;
     function segundos_funcion() {
     segundos = segundos + 1;
-    console.log(segundos)
+   
     $("#contador_pregunta_toda").val(segundos);
     guadar_video();
     }
