@@ -127,7 +127,7 @@
           
           <div class="row justify-content-center">
               <div class="col-md-12 text-center">
-                  <img class="img-fluid" src="<?php echo $url_sitio; ?>assets/images/pagina-video.png" style="max-width:880px;">
+                  <img class="img-fluid" src="<?php echo $url_sitio; ?>assets/images/pagina-video.jpg" style="max-width:880px;">
               </div>
           </div>
         
@@ -266,7 +266,7 @@
       <div class="container">
             <div class="row pb-5 justify-content-center">
                   <div class="col-md-8 text-center">
-                     <h4 class="tex-mediano">Curso Online para Promover tu Negocio en GOOGLE</h4>
+                     <h4 class="tex-mediano">Yo de ti, no dejaba escapar esta oportunidad.</h4>
                   </div>
             </div>
 
