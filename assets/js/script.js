@@ -52,6 +52,8 @@ $.post(ruta_ajax+"assets/ajax/enviar.php",$(".form_enviar").serialize(),function
      });
     };
 
+    if ( $("#code_registrocurso").length ) {
+        // hacer algo aquí si el elemento existe
     var segundos = 0;
     function segundos_funcion() {
     segundos = segundos + 1;
@@ -59,6 +61,9 @@ $.post(ruta_ajax+"assets/ajax/enviar.php",$(".form_enviar").serialize(),function
     guadar_video();
     }
   	setInterval(segundos_funcion, 1000);   
+    
+    }
+
 
 $("#check_terminos").click(function(){
 
