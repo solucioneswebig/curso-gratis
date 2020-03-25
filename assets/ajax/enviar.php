@@ -90,7 +90,7 @@ if(isset($_POST["guardar_video"])){
     ];
 
     $where = [
-        "code_registrocurso" => $_POST["code_registrocurso"]
+        "id_registrocurso" => $_POST["id_registrocurso"]
     ];
 
     $actualizar = update('tb_registro_curso',$where,$data);
