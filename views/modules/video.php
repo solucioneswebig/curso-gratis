@@ -348,7 +348,7 @@ ob_start();
 
 $obtener_dato = select_one("SELECT * FROM tb_registro_curso WHERE code_registrocurso = '".$rutas[2]."'");
 if(!$obtener_dato):
-header("Location: https://webx.mx/curso-gratis/debe-registrarse");
+header("Location: ".$ruta_second."/curso-gratis/debe-registrarse");
 else:
 ?>
 
