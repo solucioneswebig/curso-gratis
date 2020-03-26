@@ -350,7 +350,15 @@ $obtener_dato = select_one("SELECT * FROM tb_registro_curso WHERE code_registroc
 if(!$obtener_dato):
 
 $url_video = $ruta_second."/curso-gratis/debe-registrarse/";
-header("Location: ".$url_video."");
+?>
+<script>
+$(document).ready(function(){
+
+    location.href = <?php echo $ruta_second; ?>
+
+})
+</script>
+<?php
 exit;
 else:
 ?>
@@ -374,8 +382,8 @@ else:
 
   <script src="<?php echo $url_sitio; ?>assets/js/script.js"></script>
   <script type="text/javascript">
-  (function(){function $MPC_load(){window.$MPC_loaded !== true && (function(){var s = document.createElement("script");s.type = "text/javascript";s.async = true;s.src = document.location.protocol+"//secure.mlstatic.com/mptools/render.js";var x = document.getElementsByTagName('script')[0];x.parentNode.insertBefore(s, x);window.$MPC_loaded = true;})();}window.$MPC_loaded !== true ? (window.attachEvent ?window.attachEvent('onload', $MPC_load) : window.addEventListener('load', $MPC_load, false)) : null;})();
-  </script>
+(function(){function $MPC_load(){window.$MPC_loaded !== true && (function(){var s = document.createElement("script");s.type = "text/javascript";s.async = true;s.src = document.location.protocol+"//secure.mlstatic.com/mptools/render.js";var x = document.getElementsByTagName('script')[0];x.parentNode.insertBefore(s, x);window.$MPC_loaded = true;})();}window.$MPC_loaded !== true ? (window.attachEvent ?window.attachEvent('onload', $MPC_load) : window.addEventListener('load', $MPC_load, false)) : null;})();
+</script>
 <?php  ob_get_clean(); ?>
 </body>
 </html>
