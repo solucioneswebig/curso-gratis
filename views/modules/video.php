@@ -351,11 +351,7 @@ if(!$obtener_dato):
 $url_video = $ruta_second."/curso-gratis/debe-registrarse/";
 ?>
 <script>
-$(document).ready(function(){
-
-    location.href = <?php echo $ruta_second; ?>
-
-})
+  window.location = "https://webx.mx/curso-gratis/debe-registrarse/"
 </script>
 <?php
 else:
