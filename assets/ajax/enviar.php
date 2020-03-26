@@ -120,7 +120,7 @@ if(isset($_POST["guardar_video"])){
     }else{
 
         $data = [
-            "id_funnels"            => $_POST["id_funnels"],
+            "id_funnels"            => 0,
             "id_registrocurso"      => $_POST["id_registrocurso"],
             "segundos_funnels"      => $_POST["segundos_funnels"],
             "click_comprar_funnels" => $_POST["click_comprar_funnels"],
