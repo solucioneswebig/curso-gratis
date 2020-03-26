@@ -367,12 +367,57 @@
 		</div>
 	</div>
 </section>
+
   <script src="<?php echo $url_sitio; ?>extensions/bootstrap/js/bootstrap.js"></script>
   <script src="<?php echo $url_sitio; ?>extensions/owl/dist/owl.carousel.js"></script>
   <!-- Datatable -->
   <script type="text/javascript" src="https://cdn.datatables.net/v/bs4/dt-1.10.20/r-2.2.3/datatables.min.js"></script>
 
   <script src="<?php echo $url_sitio; ?>assets/js/script.js"></script>
+
+<?php 
+if(isset($rutas[1]) && $rutas[1] == "debe-registrarse"):
+?>
+
+<script>
+
+$(document).ready(function(){
+
+	$("#boton_modal").click();
+
+})
+
+</script>
+
+<?php 
+endif;
+?>
+
+<!-- Button trigger modal -->
+<button type="button" class="btn btn-primary" id="boton_modal" data-toggle="modal" data-target="#exampleModalCenter" style="display:none;">
+  Launch demo modal
+</button>
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalCenterTitle">Aviso</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        ...
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div>
+    </div>
+  </div>
+</div>
 
 </body>
 </html>
