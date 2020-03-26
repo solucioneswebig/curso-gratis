@@ -403,17 +403,16 @@ endif;
   <div class="modal-dialog modal-dialog-centered" role="document">
     <div class="modal-content">
       <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalCenterTitle">Aviso</h5>
+        <h5 class="modal-title" id="exampleModalCenterTitle">Importante</h5>
         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
           <span aria-hidden="true">&times;</span>
         </button>
       </div>
       <div class="modal-body">
-        ...
+	  		<p style="font-size:22px;font-weight:bold;text-align:center;">Para Acceder al Curso GRATUITO es necesario Registrarse en el Formulario.</p>
       </div>
       <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-        <button type="button" class="btn btn-primary">Save changes</button>
+			<p class="text-center">WEBX.MX</p>
       </div>
     </div>
   </div>
