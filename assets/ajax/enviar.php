@@ -101,7 +101,7 @@ if(isset($_POST["guardar_video"])){
 
     $buscar_info = select_one("SELECT * FROM tb_curso_funnels WHERE id_registrocurso =".$_POST["id_registrocurso"]."");
 
-    if($buscar_info){
+    if($buscar_info["segundos_funnels"] != ""){
         $data = [
 
             "segundos_funnels"      => $_POST["segundos_funnels"],
