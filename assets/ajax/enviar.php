@@ -97,26 +97,34 @@ if(isset($_POST["guardar_video"])){
     ];
 
     $actualizar = update('tb_registro_curso',$where,$data);
+    
+    if($actualizar){
+        echo 1;
+    }else{
+        echo 0;
+    }
 
 
     $buscar_info = select_one("SELECT * FROM tb_curso_funnels WHERE id_registrocurso =".$_POST["id_registrocurso"]."");
 
     if($buscar_info["segundos_funnels"] != ""){
         $data = [
-
             "segundos_funnels"      => $_POST["segundos_funnels"],
             "click_comprar_funnels" => $_POST["click_comprar_funnels"],
-            "fecha_uptade_funnels"  => $date
-
+            "fecha_update_funnels"  => $date
         ];
 
         $where = [
-
             "id_registrocurso" => $_POST["id_registrocurso"]
-
         ];
 
         $actualizar = update("tb_curso_funnels",$where,$data);
+        
+    if($actualizar){
+        echo 1;
+    }else{
+        echo 0;
+    }
     }else{
 
         $data = [
@@ -124,18 +132,19 @@ if(isset($_POST["guardar_video"])){
             "id_registrocurso"      => $_POST["id_registrocurso"],
             "segundos_funnels"      => $_POST["segundos_funnels"],
             "click_comprar_funnels" => $_POST["click_comprar_funnels"],
-            "fecha_uptade_funnels"  => $date
+            "fecha_update_funnels"  => $date
         ];
 
         $actualizar = insert("tb_curso_funnels",$data);
-
-    }
-
+        
     if($actualizar){
         echo 1;
     }else{
         echo 0;
     }
+
+    }
+
     
     
 }
