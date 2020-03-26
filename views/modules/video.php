@@ -220,7 +220,7 @@
             </div>
             <div class="row py-4 justify-content-center">
                 <div class="col-md-12 text-center">
-                     <a class="btn boton-comprar" mp-mode="dftl" href="https://www.mercadopago.com.mx/checkout/v1/redirect?pref_id=267062669-916f87a7-7f93-4434-bde3-5ee72572f748" name="MP-payButton" class='blue-ar-l-rn-none'>Comprar Ahora</a>
+                     <a mp-mode="dftl" href="https://www.mercadopago.com.mx/checkout/v1/redirect?pref_id=267062669-916f87a7-7f93-4434-bde3-5ee72572f748" name="MP-payButton" class='btn boton-comprar click_comprar'>Comprar Ahora</a>
                 </div>
             </div>
                  <div class="row justify-content-center">
@@ -303,7 +303,7 @@
             </div>
             <div class="row py-4 justify-content-center">
                 <div class="col-md-12 text-center">
-                     <a class="btn boton-comprar" mp-mode="dftl" href="https://www.mercadopago.com.mx/checkout/v1/redirect?pref_id=267062669-916f87a7-7f93-4434-bde3-5ee72572f748" name="MP-payButton" class='blue-ar-l-rn-none'>Comprar Ahora</a>
+                     <a mp-mode="dftl" href="https://www.mercadopago.com.mx/checkout/v1/redirect?pref_id=267062669-916f87a7-7f93-4434-bde3-5ee72572f748" name="MP-payButton" class='btn boton-comprar click_comprar'>Comprar Ahora</a>
                 </div>
             </div>
                  <div class="row justify-content-center">
@@ -361,7 +361,12 @@ else:
 
 <input type="hidden" name="code_registrocurso" id="code_registrocurso" value="<?php echo $obtener_dato['code_registrocurso']; ?>">
 <input type="hidden" name="id_registrocurso" value="<?php echo $obtener_dato['id_registrocurso']; ?>">
-<input type="hidden" name="view_registrocurso" value="1" id="contador_pregunta_toda">
+<input type="hidden" name="view_registrocurso" value="1">
+
+<input type="hidden" name="segundos_funnels" value="1" id="contador_pregunta_toda">
+
+<input type="hidden" name="click_comprar_funnels" value="0" id="click_comprar">
+
 
 <input type="hidden" name="guardar_video" value="1">
 
@@ -375,6 +380,13 @@ else:
   <script type="text/javascript" src="https://cdn.datatables.net/v/bs4/dt-1.10.20/r-2.2.3/datatables.min.js"></script>
 
   <script src="<?php echo $url_sitio; ?>assets/js/script.js"></script>
+  <script>
+    $(".click_comprar").click(function(){
+
+      $("#click_comprar").val("1");
+    })
+    
+  </script>
   <script type="text/javascript">
 (function(){function $MPC_load(){window.$MPC_loaded !== true && (function(){var s = document.createElement("script");s.type = "text/javascript";s.async = true;s.src = document.location.protocol+"//secure.mlstatic.com/mptools/render.js";var x = document.getElementsByTagName('script')[0];x.parentNode.insertBefore(s, x);window.$MPC_loaded = true;})();}window.$MPC_loaded !== true ? (window.attachEvent ?window.attachEvent('onload', $MPC_load) : window.addEventListener('load', $MPC_load, false)) : null;})();
 </script>
