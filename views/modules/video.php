@@ -371,7 +371,7 @@ if($date_start == "0000-00-00 00:00:00"){
 $fecha1 = new DateTime($date_start);//fecha inicial
 $fecha2 = new DateTime();//fecha de cierre
 
-$intervalo = $fecha1->diff($fecha2);
+$intervalo = $fecha2->diff($fecha1);
 
 echo $intervalo->format('%H');//00 años 0 meses 0 días 08 horas 0 minutos 0 segundos
 
