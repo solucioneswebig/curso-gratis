@@ -352,9 +352,17 @@ $num_veces = $obtener_dato["nro_veces_visto_funnels"]+1;
 
 $date_start = $obtener_dato["fecha_primera_vista_funnels"];
 
-$date = new DateTime($date_start);
-$date->modify('+48 hours');
-$mod_date = $date->format('m/d/Y h:i:s A');
+if($date_start == "0000-00-00 00:00:00"){
+  $date = new DateTime();
+  $date->modify('+48 hours');
+  $mod_date = $date->format('m/d/Y h:i:s A');
+}else{
+  $date = new DateTime($date_start);
+  $date->modify('+48 hours');
+  $mod_date = $date->format('m/d/Y h:i:s A');
+}
+
+
 ?>
 <input type="hidden" name="date_end" id="date_end" value="<?php echo $mod_date; ?>">
 <?php 
@@ -411,7 +419,7 @@ else:
       var date_end = $("#date_end").val();
 
       console.log(date_end);
-       var end = new Date("<? echo $date->format('m/d/Y h:i:s A'); ?>");
+       var end = new Date("<? echo $mod_date; ?>");
 
         var _second = 1000;
         var _minute = _second * 60;
