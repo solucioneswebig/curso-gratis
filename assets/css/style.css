@@ -114,6 +114,9 @@
     padding: 15px 45px 15px 45px;
 }
 
+#countdown div {
+  font-size: 25px;
+}
 .boton-comprar:hover {
   color: #00ce1b;
     background-color: rgba(0,206,27,0);

@@ -340,7 +340,7 @@
 	</div>
 </section>
 
-<div class="fixed-bottom text-center bg-dark text-white">
+<div class="fixed-bottom text-center bg-success text-white">
 
 <div id="countdown"></div>
 
@@ -455,7 +455,7 @@ else:
             document.getElementById('countdown').innerHTML += seconds + ' segundos';
             */
 
-            document.getElementById('countdown').innerHTML = "<div><span class='days'>"+days+" Dias</span> <span class='hours'>"+hours+" Horas</span> <span class='minutes'>"+minutes+" Minutos</span> <span class='seconds'>"+seconds+" Segundos</span></div>"
+            document.getElementById('countdown').innerHTML = "<div class='date'><span class='days'>"+days+" Dias</span> <span class='hours'>"+hours+" Horas</span> <span class='minutes'>"+minutes+" Minutos</span> <span class='seconds'>"+seconds+" Segundos</span></div>"
         }
 
         timer = setInterval(showRemaining, 1000);
