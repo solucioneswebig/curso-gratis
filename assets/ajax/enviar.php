@@ -42,6 +42,20 @@ if(isset($_POST["name"])){
 
         $guardar = insert("tb_registro_curso",$data);
 
+        $date = "0000-00-00 00:00:00";
+        
+        $data = [
+            "id_funnels"                      => 0,
+            "id_registrocurso"                => $id_registrocurso,
+            "nro_veces_visto_funnels"         => 0,
+            "segundos_funnels"                => 0,
+            "click_comprar_funnels"           => 0,
+            "fecha_primera_vista_funnels"     => $date,
+            "fecha_update_funnels"            => $date
+        ];
+
+        $actualizar = insert("tb_curso_funnels",$data);
+
         if($guardar):
             
             $cabecera = '<h3>Hola '.$_POST["name"].'</h3>
