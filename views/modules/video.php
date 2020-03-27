@@ -411,6 +411,8 @@ else:
     <div id="countdown"></div>
     <script>
       var date_end = $("#date_end").val();
+
+      console.log(date_end);
     var end = new Date(date_end);
 
         var _second = 1000;
