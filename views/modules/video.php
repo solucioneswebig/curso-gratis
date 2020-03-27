@@ -354,7 +354,7 @@ $date_start = $obtener_dato["fecha_primera_vista_funnels"];
 
 $date = new DateTime($date_start);
 $date->modify('+48 hours');
-$mod_date = $date->format('d-m-Y H:i:s');
+$mod_date = $date->format('d-m-Y h:i:s a');
 ?>
 <input type="hidden" name="date_end" id="date_end" value="<?php echo $mod_date; ?>">
 <?php 
@@ -411,7 +411,7 @@ else:
       var date_end = $("#date_end").val();
 
       console.log(date_end);
-       var end = new Date("<? echo $date->format('d-m-Y h:i:s'); ?>");
+       var end = new Date("<? echo $date->format('d-m-Y h:i:s a'); ?>");
 
         var _second = 1000;
         var _minute = _second * 60;
