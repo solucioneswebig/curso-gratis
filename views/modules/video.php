@@ -350,7 +350,14 @@
 $obtener_dato = select_one("SELECT * FROM tb_registro_curso as curso 
                             JOIN tb_curso_funnels as funnels on curso.id_registrocurso = funnels.id_registrocurso  and curso.code_registrocurso = '".$rutas[2]."'");
 
-$num_veces = $obtener_dato["nro_veces_visto_funnels"]+1;                            
+$num_veces = $obtener_dato["nro_veces_visto_funnels"]+1;  
+
+$date_start = $obtener_dato["fecha_primera_vista_funnels"];
+
+$mod_date = strtotime($date_start."+ 2 days");
+
+echo $mod_date;
+
 if(!$obtener_dato):
 
 $url_video = $ruta_second."/curso-gratis/debe-registrarse/";
@@ -397,6 +404,41 @@ else:
     })
     
   </script>
+
+    <div id="countdown"></div>
+    <script>
+    var end = new Date('12/17/2020 9:30 AM');
+
+        var _second = 1000;
+        var _minute = _second * 60;
+        var _hour = _minute * 60;
+        var _day = _hour * 24;
+        var timer;
+
+        function showRemaining() {
+            var now = new Date();
+            var distance = end - now;
+            if (distance < 0) {
+
+                clearInterval(timer);
+                document.getElementById('countdown').innerHTML = 'EXPIRED!';
+
+                return;
+            }
+            var days = Math.floor(distance / _day);
+            var hours = Math.floor((distance % _day) / _hour);
+            var minutes = Math.floor((distance % _hour) / _minute);
+            var seconds = Math.floor((distance % _minute) / _second);
+
+            document.getElementById('countdown').innerHTML = days + ' dias, ';
+            document.getElementById('countdown').innerHTML += hours + ' horas, ';
+            document.getElementById('countdown').innerHTML += minutes + ' minutos y ';
+            document.getElementById('countdown').innerHTML += seconds + ' segundos';
+        }
+
+        timer = setInterval(showRemaining, 1000);
+    </script>
+
   <script type="text/javascript">
 (function(){function $MPC_load(){window.$MPC_loaded !== true && (function(){var s = document.createElement("script");s.type = "text/javascript";s.async = true;s.src = document.location.protocol+"//secure.mlstatic.com/mptools/render.js";var x = document.getElementsByTagName('script')[0];x.parentNode.insertBefore(s, x);window.$MPC_loaded = true;})();}window.$MPC_loaded !== true ? (window.attachEvent ?window.attachEvent('onload', $MPC_load) : window.addEventListener('load', $MPC_load, false)) : null;})();
 </script>
