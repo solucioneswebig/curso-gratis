@@ -411,7 +411,7 @@ else:
       var date_end = $("#date_end").val();
 
       console.log(date_end);
-    var end = new Date('<?=$mod_date?>');
+       var end = new Date('<?=$date->format('d-m-Y H:i:s')?>');
 
         var _second = 1000;
         var _minute = _second * 60;
