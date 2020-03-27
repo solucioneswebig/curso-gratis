@@ -13,7 +13,7 @@
     <meta name="Keywords" content="CURSO GRATIS DE FACEBOOK, ESTRATEGIAS PARA VENDER EN FACEBOOK, CURSO ONLINE GRATUITO"/>
     <meta name="author" content="webx.mx">
     <meta name="owner" content="novapage.net">
-    <meta name="robots" content="index, follow">
+    <meta name="robots" content="noindex, nofollow">
     <meta property="og:title" content="CURSO GRATIS - 3 Estratégias para Vender en Facebook"/>
     <meta property="og:description" content="CURSO ONLINE GRATUITO 3 ESTRATÉGIAS PARA PROMOCIONAR MÍ NEGOCIO EN FACEBOOK Y PODER AUMENTAR MIS VENTAS EN 2020."/>
     <meta property="og:image" content="https://webx.mx//views/curso/assets/images/imagen-principal.png"/>
@@ -214,8 +214,8 @@
                 <div class="col-md-8">
                   <H3 class="text-center tex-mediano">PÁGINA WEB COMPLETA</H3>
                   <p class="text-pequeno pt-3 text-center">PRECIO ESPECIAL</p>
-                  <h4 class="text-center">$ 1,315</h4>
                   <h4 class="text-grande text-center">$ 949 <small class="pequeno">IVA INCLUIDO</small></h4>
+                  <h4 class="text-center" style="color:#ca611f">Precio Normal $ 1,315</h4>
                 </div>
             </div>
             <div class="row py-4 justify-content-center">
@@ -241,19 +241,19 @@
       <div class="container">
             <div class="row pt-5 justify-content-center">
                   <div class="col-md-8 text-center">
-                     <h4 class="tex-mediano">Curso Online para Promover tu Negocio en GOOGLE</h4>
+                     <h4 class="tex-mediano">Una Asesoría Personalizada</h4>
                   </div>
             </div>
 
             <div class="row justify-content-center">
                   <div class="col-md-8 text-center">
-                      <h4 class="text-pequeno">Un Curso fácil de aprender, para promover tu NEGOCIO, PRODUCTOS O SERVICIOS en GOOGLE ADS, el Buscador más consultado del mundo.</h4>
+                      <h4 class="text-pequeno">Un Experto en Marketing Digital se pondrá en contacto contigo para ofrecerte su experiencia y ayudarte a poner en marcha estas Estrategias, con la finalidad que veas resultados a corto plazo.</h4>
                   </div>
             </div>
 
             <div class="row py-5 justify-content-center">
                 <div class="col-md-6 text-center">
-                    <img class="img-fluid" src="<?php echo $url_sitio; ?>assets/images/page-face.png">
+                    <img class="img-fluid" src="<?php echo $url_sitio; ?>assets/images/page-face.jpg">
                 </div>
             </div>
 
@@ -292,13 +292,15 @@
                         <h4 class="text-grande">¿Por qué esperar para vender más?</h4>
                   </div>
               </div>
-
+            <br>
+            <br>
             <div class="row justify-content-center">
                 <div class="col-md-8">
+                  <p class="text-pequeno pt-3 text-center">Dale Imagen a tu Negocio en Internet con una</p>   
                   <H4 class="text-center tex-mediano">PÁGINA WEB COMPLETA</H4>
                   <p class="text-pequeno pt-3 text-center">PRECIO ESPECIAL</p>
-                  <h4 class="text-center">$ 1,315</h4>
                   <h4 class="text-grande text-center">$ 949 <small class="pequeno">IVA INCLUIDO</small></h4>
+                  <h4 class="text-center" style="color:#ca611f">Precio Normal $ 1,315</h4>
                 </div>
             </div>
             <div class="row py-4 justify-content-center">
@@ -345,10 +347,14 @@
 
 
 
-$obtener_dato = select_one("SELECT * FROM tb_registro_curso WHERE code_registrocurso = '".$rutas[2]."'");
+$obtener_dato = select_one("SELECT * FROM tb_registro_curso as curso 
+                            JOIN tb_curso_funnels as funnels on curso.id_registrocurso = funnels.id_registrocurso  and curso.code_registrocurso = '".$rutas[2]."'");
 if(!$obtener_dato):
 
 $url_video = $ruta_second."/curso-gratis/debe-registrarse/";
+
+$num_veces = $obtener_dato["nro_veces_visto_funnels"]+1;
+
 ?>
 <script>
   window.location = "https://webx.mx/curso-gratis/debe-registrarse/"
@@ -366,6 +372,8 @@ else:
 <input type="hidden" name="segundos_funnels" value="1" id="contador_pregunta_toda">
 
 <input type="hidden" name="click_comprar_funnels" value="0" id="click_comprar">
+
+<input type="hidden" name="nro_veces_visto_funnels" value="<?php echo $num_veces; ?>">
 
 
 <input type="hidden" name="guardar_video" value="1">

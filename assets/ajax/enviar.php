@@ -108,9 +108,22 @@ if(isset($_POST["guardar_video"])){
     $buscar_info = select_one("SELECT * FROM tb_curso_funnels WHERE id_registrocurso =".$_POST["id_registrocurso"]."");
 
     if($buscar_info["segundos_funnels"] != ""){
+
+        if($_POST["segundos_funnels"]>$buscar_info["segundos_funnels"]){
+            $segundos = $_POST["segundos_funnels"];
+        }else{
+            $segundos = $buscar_info["segundos_funnels"];
+        }
+
+        if($buscar_info["click_comprar_funnels"] == 1){
+            $click = 1;
+        }else{
+            $click = $_POST["click_comprar_funnels"];
+        }
+
         $data = [
             "segundos_funnels"      => $_POST["segundos_funnels"],
-            "click_comprar_funnels" => $_POST["click_comprar_funnels"],
+            "click_comprar_funnels" => $click,
             "fecha_update_funnels"  => $date
         ];
 
@@ -126,13 +139,28 @@ if(isset($_POST["guardar_video"])){
         echo 0;
     }
     }else{
+        
+        if($_POST["segundos_funnels"]>$buscar_info["segundos_funnels"]){
+            $segundos = $_POST["segundos_funnels"];
+        }else{
+            $segundos = $buscar_info["segundos_funnels"];
+        }
+
+        if($buscar_info["click_comprar_funnels"] == 1){
+            $click = 1;
+        }else{
+            $click = $_POST["click_comprar_funnels"];
+        }
+        
 
         $data = [
-            "id_funnels"            => 0,
-            "id_registrocurso"      => $_POST["id_registrocurso"],
-            "segundos_funnels"      => $_POST["segundos_funnels"],
-            "click_comprar_funnels" => $_POST["click_comprar_funnels"],
-            "fecha_update_funnels"  => $date
+            "id_funnels"                      => 0,
+            "id_registrocurso"                => $_POST["id_registrocurso"],
+            "nro_veces_visto_funnels"         => $_POST["nro_veces_visto_funnels"],
+            "segundos_funnels"                => $_POST["segundos_funnels"],
+            "click_comprar_funnels"           => $click,
+            "fecha_primera_vista_funnels"     => $date,
+            "fecha_update_funnels"            => $date
         ];
 
         $actualizar = insert("tb_curso_funnels",$data);
