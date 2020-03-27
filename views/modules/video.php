@@ -369,7 +369,7 @@ if($date_start == "0000-00-00 00:00:00"){
 }
 
 $fecha1 = new DateTime();//fecha inicial
-$fecha2 = new DateTime($date_start);//fecha de cierre
+$fecha2 = new DateTime($mod_date);//fecha de cierre
 
 $intervalo = $fecha1->diff($fecha2);
 
