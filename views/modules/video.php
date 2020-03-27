@@ -349,11 +349,13 @@
 
 $obtener_dato = select_one("SELECT * FROM tb_registro_curso as curso 
                             JOIN tb_curso_funnels as funnels on curso.id_registrocurso = funnels.id_registrocurso  and curso.code_registrocurso = '".$rutas[2]."'");
+
+$num_veces = $obtener_dato["nro_veces_visto_funnels"]+1;                            
 if(!$obtener_dato):
 
 $url_video = $ruta_second."/curso-gratis/debe-registrarse/";
 
-$num_veces = $obtener_dato["nro_veces_visto_funnels"]+1;
+
 
 ?>
 <script>
