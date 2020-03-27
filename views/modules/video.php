@@ -373,8 +373,9 @@ $fecha2 = new DateTime($date_start);//fecha de cierre
 
 $intervalo = $fecha1->diff($fecha2);
 
-echo $intervalo->format('%H');//00 años 0 meses 0 días 08 horas 0 minutos 0 segundos
 
+echo $intervalo->format('%Y años %m meses %d days %H horas %i minutos 
+%s segundos');//00 años 0 meses 0 días 08 horas 0 minutos 0 segundos
 
 ?>
 <input type="hidden" name="date_end" id="date_end" value="<?php echo $mod_date; ?>">
