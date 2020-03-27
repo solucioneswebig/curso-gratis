@@ -109,7 +109,7 @@ if(isset($_POST["guardar_video"])){
 
     if($buscar_info["segundos_funnels"] != ""){
 
-        if($_POST["segundos_funnels"]>$buscar_info["segundos_funnels"]){
+        if($_POST["segundos_funnels"] > $buscar_info["segundos_funnels"]){
             $segundos = $_POST["segundos_funnels"];
         }else{
             $segundos = $buscar_info["segundos_funnels"];
@@ -123,7 +123,7 @@ if(isset($_POST["guardar_video"])){
 
         $data = [
             "nro_veces_visto_funnels"         => $_POST["nro_veces_visto_funnels"],
-            "segundos_funnels"          => $_POST["segundos_funnels"],
+            "segundos_funnels"          => $segundos,
             "click_comprar_funnels" => $click,
             "fecha_update_funnels"  => $date
         ];
@@ -158,7 +158,7 @@ if(isset($_POST["guardar_video"])){
             "id_funnels"                      => 0,
             "id_registrocurso"                => $_POST["id_registrocurso"],
             "nro_veces_visto_funnels"         => $_POST["nro_veces_visto_funnels"],
-            "segundos_funnels"                => $_POST["segundos_funnels"],
+            "segundos_funnels"                => $segundos,
             "click_comprar_funnels"           => $click,
             "fecha_primera_vista_funnels"     => $date,
             "fecha_update_funnels"            => $date
