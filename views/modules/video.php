@@ -340,6 +340,12 @@
 	</div>
 </section>
 
+<div class="fixed-bottom text-center bg-dark text-white">
+
+<div id="countdown"></div>
+
+</div>
+
 
 <?php 
 
@@ -414,7 +420,7 @@ else:
     
   </script>
 
-    <div id="countdown"></div>
+    
     <script>
       var date_end = $("#date_end").val();
 
@@ -441,11 +447,15 @@ else:
             var hours = Math.floor((distance % _day) / _hour);
             var minutes = Math.floor((distance % _hour) / _minute);
             var seconds = Math.floor((distance % _minute) / _second);
-
+            
+            /*
             document.getElementById('countdown').innerHTML = days + ' dias, ';
             document.getElementById('countdown').innerHTML += hours + ' horas, ';
             document.getElementById('countdown').innerHTML += minutes + ' minutos y ';
             document.getElementById('countdown').innerHTML += seconds + ' segundos';
+            */
+
+            document.getElementById('countdown').innerHTML = "<div><span class='days'>"+days+" Dias</span> <span class='hours'>"+hours+" Horas</span> <span class='minutes'>"+minutes+" Minutos</span> <span class='seconds'>"+seconds+" Segundos</span></div>"
         }
 
         timer = setInterval(showRemaining, 1000);
