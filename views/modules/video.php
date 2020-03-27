@@ -354,9 +354,9 @@ $num_veces = $obtener_dato["nro_veces_visto_funnels"]+1;
 
 $date_start = $obtener_dato["fecha_primera_vista_funnels"];
 
-$mod_date = strtotime($date_start."+ 2 days");
-
-echo $mod_date;
+$date = new DateTime($date_start);
+$date->modify('+48 hours');
+echo $date->format('d-m-Y H:i:s');
 
 if(!$obtener_dato):
 
