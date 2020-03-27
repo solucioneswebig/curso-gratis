@@ -43,7 +43,7 @@ if(isset($_POST["name"])){
         $guardar = insert("tb_registro_curso",$data);
 
         $date = "0000-00-00 00:00:00";
-        
+
         $data = [
             "id_funnels"                      => 0,
             "id_registrocurso"                => $id_registrocurso,
@@ -101,6 +101,7 @@ if(isset($_POST["guardar_video"])){
   
 
     $date = date("Y-m-d H:m:s");
+
     $data = [
         "view_registrocurso" => $_POST["view_registrocurso"],
         "date_modified"      => $date
@@ -135,11 +136,19 @@ if(isset($_POST["guardar_video"])){
             $click = $_POST["click_comprar_funnels"];
         }
 
+        if($buscar_info["fecha_primera_vista_funnels"]  == "0000-00-00 00:00:00"){
+            $date_new = $date;
+        }else{
+            $date_new = $buscar_info["fecha_primera_vista_funnels"];
+        }
+        
+
         $data = [
-            "nro_veces_visto_funnels"         => $_POST["nro_veces_visto_funnels"],
-            "segundos_funnels"          => $segundos,
-            "click_comprar_funnels" => $click,
-            "fecha_update_funnels"  => $date
+            "nro_veces_visto_funnels"     => $_POST["nro_veces_visto_funnels"],
+            "segundos_funnels"            => $segundos,
+            "click_comprar_funnels"       => $click,
+            "fecha_primera_vista_funnels" => $date_new,
+            "fecha_update_funnels"        => $date
         ];
 
         $where = [
