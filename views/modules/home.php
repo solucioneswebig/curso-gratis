@@ -96,7 +96,7 @@
 				    <input type="text" class="form-control" id="" name="negocio" placeholder="Negocio">
 				  </div>
 				  <div class="form-group">
-				    <input type="email" class="form-control" id="correo_form" name="email" placeholder="E-mail">
+				    <input type="email" class="form-control requerido_correo" id="correo_form" name="email" placeholder="E-mail">
 				  </div>
 				  <div class="form-check">
 				    <input type="checkbox" class="form-check-input" name="check_cliente" id="exampleCheck1">

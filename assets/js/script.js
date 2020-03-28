@@ -106,7 +106,25 @@ $("#area_video").click(function(){
 })
 
 })
+ 
+$(".requerido_correo").keyup(function (){
 
+    
+    $.post(ruta_servidor+"assets/ajax/enviar.php",{ verificar_correo: $(".requerido_correo").val() },function(res){
+    
+      if(res == 1){
+        $(".requerido_correo").val("");
+         $(".mensaje").html('<div class="alert alert-danger">Existe un correo registrada igual.</div>');
+       //$("#mensaje").html("slow");      // Si hemos tenido éxito, hacemos aparecer el div "exito" con un efecto fadeIn lento tras un delay de 0,5 segundos.
+        }else {
+        console.log(res)
+        $(".mensaje").html('');
+          //$("#fracaso").delay(500).fadeIn("slow");    // Si no, lo mismo, pero haremos aparecer el div "fracaso"
+      }
+
+    });
+
+});  
 
 function validaForm_liderBanda(){
 
