@@ -1,6 +1,6 @@
 <?php 
 //$url_sitio    = $ruta_second."/views/curso/";
-date_default_timezone_set('America/Mexico_City');
+
 ?>
 <!DOCTYPE html>
 <html lang="es">
@@ -358,7 +358,7 @@ $obtener_dato = select_one("SELECT * FROM tb_registro_curso as curso
 $num_veces = $obtener_dato["nro_veces_visto_funnels"]+1;  
 
 $date_start = $obtener_dato["fecha_primera_vista_funnels"];
-
+date_default_timezone_set('America/Mexico_City');
 if($date_start == "0000-00-00 00:00:00"){
   $date = new DateTime();
   $date->modify('+48 hours');

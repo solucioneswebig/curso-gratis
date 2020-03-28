@@ -6,7 +6,7 @@ include "../../../../models/mails.models.php";
 
 $url_sitio    = "https://webx.mx/curso-gratis/";
 
-date_default_timezone_set('America/Mexico_City');
+
 
 /**
 * 
@@ -17,6 +17,8 @@ if(isset($_POST["name"])){
 
         $id_registrocurso = id_registro("id_registrocurso","tb_registro_curso");
 
+        date_default_timezone_set('America/Mexico_City');
+        
         $date = date("Y-m-d H:m:s");
 
         if(isset($_POST["check_cliente"])){
