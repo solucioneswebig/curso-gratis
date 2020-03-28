@@ -438,10 +438,13 @@ else:
             var distance = end - now;
             if (distance < 0) {
 
+              window.location = "https://webx.mx/curso-gratis/oferta-expiro/"
                 clearInterval(timer);
+
+
                 document.getElementById('countdown').innerHTML = 'EXPIRED!';
 
-                window.location = "https://webx.mx/curso-gratis/oferta-expiro/"
+               
 
                 return;
             }
