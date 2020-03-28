@@ -110,7 +110,7 @@ $("#area_video").click(function(){
 $(".requerido_correo").keyup(function (){
 
     
-    $.post(ruta_servidor+"assets/ajax/enviar.php",{ verificar_correo: $(".requerido_correo").val() },function(res){
+    $.post(ruta_ajax+"assets/ajax/enviar.php",{ verificar_correo: $(".requerido_correo").val() },function(res){
     
       if(res == 1){
         $(".requerido_correo").val("");
