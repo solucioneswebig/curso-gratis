@@ -368,14 +368,6 @@ if($date_start == "0000-00-00 00:00:00"){
   $mod_date = $date->format('m/d/Y h:i:s A');
 }
 
-$fecha1 = new DateTime($mod_date);//fecha inicial
-$fecha2 = new DateTime();//fecha de cierre
-
-$intervalo = $fecha1->diff($fecha2);
-
-
-echo $intervalo->format('%H');//00 años 0 meses 0 días 08 horas 0 minutos 0 segundos
-
 ?>
 <input type="hidden" name="date_end" id="date_end" value="<?php echo $mod_date; ?>">
 <?php 
@@ -447,6 +439,8 @@ else:
 
                 clearInterval(timer);
                 document.getElementById('countdown').innerHTML = 'EXPIRED!';
+
+                window.location = "https://webx.mx/curso-gratis/oferta-expiro/"
 
                 return;
             }
