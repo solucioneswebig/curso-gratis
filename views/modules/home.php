@@ -35,10 +35,9 @@
     <link rel="stylesheet" href="<?php echo $url_sitio; ?>extensions/owl/dist/assets/owl.theme.default.min.css">
 
     <link rel="stylesheet" href="<?php echo $url_sitio; ?>assets/css/style.css">
-    <link rel="stylesheet" href="<?php echo $url_sitio; ?>assets/css/responsive.css">
+
 	
-	<!-- ADMIN CSS -->
-    <link rel="stylesheet" href="<?php echo $url_sitio; ?>assets/css/admin.css">
+
     
     <!-- DATATABLE CSS -->
     <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/v/bs4/dt-1.10.20/r-2.2.3/datatables.min.css"/>

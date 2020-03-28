@@ -3,7 +3,7 @@ require_once "conexion.php";
 /*FUNCION SELECCIONAR VARIOS*/
 
 function select_all($sql){
-			$conexion = new Conexion();
+			$conexion = new ConexionOther();
 			$stmt = $conexion->prepare($sql);
             $stmt->execute();  
             $datos = $stmt->fetchAll();
@@ -13,7 +13,7 @@ function select_all($sql){
 /*FUNCION SELECCIONAR VARIOS FIN*/
 /*FUNCION SELECCIONAR UNO*/
 function select_one($sql){
-			$conexion = new Conexion();
+			$conexion = new ConexionOther();
 			$stmt = $conexion->prepare($sql);
             $stmt->execute();  
             $datos = $stmt->fetch();
@@ -38,7 +38,7 @@ foreach ($data as $key => $value) {
 		$i++;
 }
  $sql = "INSERT INTO ".$bd." (".$data_one.") VALUES (".$data_two.")";
-$conexion = new Conexion();
+$conexion = new ConexionOther();
 $stmt= $conexion->prepare($sql);
 $dato = $stmt->execute($data);
 //$stmt = null;
@@ -53,7 +53,7 @@ foreach ($where as $key => $value) {
 }
 $sql = "DELETE FROM ".$bd."
 WHERE ".$campo." = ".$value_campo."";
-$conexion = new Conexion();
+$conexion = new ConexionOther();
 $stmt= $conexion->prepare($sql);
 $dato = $stmt->execute();
 $stmt = null;
@@ -79,7 +79,7 @@ foreach ($where as $key => $value) {
 	$value_where = $value;
 }
  $sql = "UPDATE ".$bd." SET ".$data_one." WHERE ".$campo_where."=".$value_where."";
- $conexion = new Conexion();
+ $conexion = new ConexionOther();
 $stmt= $conexion->prepare($sql);
 $dato =  $stmt->execute($data);
 $stmt = null;
@@ -90,7 +90,7 @@ return $dato;
 /*LAST ID*/
 
 function last_id(){
-	$conexion = new Conexion();	
+	$conexion = new ConexionOther();	
 	$link = $conexion;
 	return $link->lastInsertId();
 }
@@ -100,7 +100,7 @@ function last_id(){
 function id_registro($campo,$tabla){
 
 $sql = "SELECT MAX(".$campo.") FROM ".$tabla."";
-$conexion = new Conexion();
+$conexion = new ConexionOther();
 $stmt= $conexion->prepare($sql);
 $stmt->execute();
 $datos = $stmt->fetch();

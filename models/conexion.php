@@ -2,9 +2,10 @@
 /**
  * 
  *  CONEXION SERVIDOR
- * 
+ *
+ */
 
-class Conexion extends PDO { 
+class ConexionOther extends PDO { 
 private $tipo_de_base = 'mysql';
 private $host = 'localhost';
 private $nombre_de_base = 'directo2_IQOS';
@@ -25,7 +26,7 @@ public function __construct() {
  * 
  * CONEXION LOCAL
  * 
- */
+
 
 
 
