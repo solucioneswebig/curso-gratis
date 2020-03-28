@@ -358,13 +358,15 @@ $obtener_dato = select_one("SELECT * FROM tb_registro_curso as curso
 $num_veces = $obtener_dato["nro_veces_visto_funnels"]+1;  
 
 $date_start = $obtener_dato["fecha_primera_vista_funnels"];
-date_default_timezone_set('America/Mexico_City');
+
 if($date_start == "0000-00-00 00:00:00"){
   $date = new DateTime();
+  $date->setTimezone(new DateTimeZone('America/Mexico_City'));
   $date->modify('+48 hours');
   $mod_date = $date->format('m/d/Y h:i:s A');
 }else{
   $date = new DateTime($date_start);
+  $date->setTimezone(new DateTimeZone('America/Mexico_City'));
   $date->modify('+48 hours');
   $mod_date = $date->format('m/d/Y h:i:s A');
 }
