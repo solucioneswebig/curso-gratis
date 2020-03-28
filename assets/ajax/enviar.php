@@ -18,7 +18,7 @@ if(isset($_POST["name"])){
         $id_registrocurso = id_registro("id_registrocurso","tb_registro_curso");
 
         date_default_timezone_set('America/Mexico_City');
-        
+
         $date = date("Y-m-d H:m:s");
 
         if(isset($_POST["check_cliente"])){
@@ -102,7 +102,7 @@ if(isset($_POST["name"])){
 if(isset($_POST["guardar_video"])){
 
   
-
+    date_default_timezone_set('America/Mexico_City');
     $date = date("Y-m-d H:m:s");
 
     $data = [
@@ -126,6 +126,9 @@ if(isset($_POST["guardar_video"])){
     $buscar_info = select_one("SELECT * FROM tb_curso_funnels WHERE id_registrocurso =".$_POST["id_registrocurso"]."");
 
     if($buscar_info["segundos_funnels"] != ""){
+
+        date_default_timezone_set('America/Mexico_City');
+        $date = date("Y-m-d H:m:s");
 
         if($_POST["segundos_funnels"] > $buscar_info["segundos_funnels"]){
             $segundos = $_POST["segundos_funnels"];
