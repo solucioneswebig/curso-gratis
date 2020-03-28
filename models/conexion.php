@@ -25,11 +25,8 @@ public function __construct() {
 /**
  * 
  * CONEXION LOCAL
- * 
-
-
-
-
+ */
+/*
 class Conexion extends PDO { 
 	private $tipo_de_base = 'mysql';
 	private $host = 'localhost';
@@ -46,5 +43,5 @@ class Conexion extends PDO {
 	  }
 	} 
 } 
-
+*/
 //fin de la clase Conexion
