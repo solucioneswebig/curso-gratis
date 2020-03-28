@@ -254,7 +254,7 @@ function post_captcha($user_response) {
  * 
  * GENERAR CODIGO
  * 
- */
+ 
 
 function generarCodigo($longitud) {
 	$key = '';
@@ -264,7 +264,7 @@ function generarCodigo($longitud) {
 	return $key;
    }
 
-    
+*/
 /*
  * 
  * GENERAR CODIGO
