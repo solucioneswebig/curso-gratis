@@ -38,7 +38,7 @@ if(isset($_POST["name"])){
             "view_registrocurso"     => 0,
             "cliente_registrocurso"  => $cliente,
             "estatus_registrocurso"  => 1,
-            "date_registrocurso"     => $date,
+            "date_registrocurso"     => "NOW()",
             "date_modified"          => "0000-00-00 00:00:00"
         ];
     
@@ -53,8 +53,8 @@ if(isset($_POST["name"])){
             "nro_veces_visto_funnels"         => 0,
             "segundos_funnels"                => 0,
             "click_comprar_funnels"           => 0,
-            "fecha_primera_vista_funnels"     => $date,
-            "fecha_update_funnels"            => $date
+            "fecha_primera_vista_funnels"     => "0000-00-00 00:00:00",
+            "fecha_update_funnels"            => "0000-00-00 00:00:00"
         ];
 
         $actualizar = insert("tb_curso_funnels",$data);
@@ -107,7 +107,7 @@ if(isset($_POST["guardar_video"])){
 
     $data = [
         "view_registrocurso" => $_POST["view_registrocurso"],
-        "date_modified"      => $date
+        "date_modified"      => "NOW()"
     ];
 
     $where = [
@@ -153,8 +153,8 @@ if(isset($_POST["guardar_video"])){
             "nro_veces_visto_funnels"     => $_POST["nro_veces_visto_funnels"],
             "segundos_funnels"            => $segundos,
             "click_comprar_funnels"       => $click,
-            "fecha_primera_vista_funnels" => $date_new,
-            "fecha_update_funnels"        => $date
+            "fecha_primera_vista_funnels" => "NOW()",
+            "fecha_update_funnels"        => "NOW()"
         ];
 
         $where = [
@@ -189,8 +189,8 @@ if(isset($_POST["guardar_video"])){
             "nro_veces_visto_funnels"         => $_POST["nro_veces_visto_funnels"],
             "segundos_funnels"                => $segundos,
             "click_comprar_funnels"           => $click,
-            "fecha_primera_vista_funnels"     => $date,
-            "fecha_update_funnels"            => $date
+            "fecha_primera_vista_funnels"     => "NOW()",
+            "fecha_update_funnels"            => "NOW()"
         ];
 
         $actualizar = insert("tb_curso_funnels",$data);
