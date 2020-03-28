@@ -6,6 +6,7 @@ include "../../../../models/mails.models.php";
 
 $url_sitio    = "https://webx.mx/curso-gratis/";
 
+date_default_timezone_set('America/Mexico_City');
 
 /**
 * 

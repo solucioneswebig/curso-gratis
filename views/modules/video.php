@@ -1,5 +1,6 @@
 <?php 
 //$url_sitio    = $ruta_second."/views/curso/";
+date_default_timezone_set('America/Mexico_City');
 ?>
 <!DOCTYPE html>
 <html lang="es">
