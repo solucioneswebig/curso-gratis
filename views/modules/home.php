@@ -93,9 +93,9 @@
 
 				   date_default_timezone_set('America/Mexico_City');
 				   setlocale(LC_TIME, 'es_MX.UTF-8');
-				   $fecha_actual=strftime("%Y-%m-%d");
-				   $hora_actual=strftime("%H:%M:%S");
-				   
+				   echo $fecha_actual=strftime("%Y-%m-%d");
+				   echo $hora_actual=strftime("%H:%M:%S");
+
 					?>
         		<form class="form_enviar"> 
         			<div class="form-group">
