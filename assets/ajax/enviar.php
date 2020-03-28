@@ -19,7 +19,7 @@ if(isset($_POST["name"])){
 
         date_default_timezone_set('America/Mexico_City');
 
-        $date = date("Y-m-d H:m:s");
+        $date = date("Y-m-d H:i:s");
 
         if(isset($_POST["check_cliente"])){
             $cliente = 1;
@@ -38,7 +38,7 @@ if(isset($_POST["name"])){
             "view_registrocurso"     => 0,
             "cliente_registrocurso"  => $cliente,
             "estatus_registrocurso"  => 1,
-            "date_registrocurso"     => "NOW()",
+            "date_registrocurso"     => $date,
             "date_modified"          => "0000-00-00 00:00:00"
         ];
     
@@ -53,8 +53,8 @@ if(isset($_POST["name"])){
             "nro_veces_visto_funnels"         => 0,
             "segundos_funnels"                => 0,
             "click_comprar_funnels"           => 0,
-            "fecha_primera_vista_funnels"     => "0000-00-00 00:00:00",
-            "fecha_update_funnels"            => "0000-00-00 00:00:00"
+            "fecha_primera_vista_funnels"     => $date,
+            "fecha_update_funnels"            => $date
         ];
 
         $actualizar = insert("tb_curso_funnels",$data);
@@ -103,11 +103,11 @@ if(isset($_POST["guardar_video"])){
 
   
     date_default_timezone_set('America/Mexico_City');
-    $date = date("Y-m-d H:m:s");
+    $date = date("Y-m-d H:i:s");
 
     $data = [
         "view_registrocurso" => $_POST["view_registrocurso"],
-        "date_modified"      => "NOW()"
+        "date_modified"      => $date
     ];
 
     $where = [
@@ -128,7 +128,7 @@ if(isset($_POST["guardar_video"])){
     if($buscar_info["segundos_funnels"] != ""){
 
         date_default_timezone_set('America/Mexico_City');
-        $date = date("Y-m-d H:m:s");
+        $date = date("Y-m-d H:i:s");
 
         if($_POST["segundos_funnels"] > $buscar_info["segundos_funnels"]){
             $segundos = $_POST["segundos_funnels"];
@@ -153,8 +153,8 @@ if(isset($_POST["guardar_video"])){
             "nro_veces_visto_funnels"     => $_POST["nro_veces_visto_funnels"],
             "segundos_funnels"            => $segundos,
             "click_comprar_funnels"       => $click,
-            "fecha_primera_vista_funnels" => "NOW()",
-            "fecha_update_funnels"        => "NOW()"
+            "fecha_primera_vista_funnels" => $date_new,
+            "fecha_update_funnels"        => $date
         ];
 
         $where = [
@@ -189,8 +189,8 @@ if(isset($_POST["guardar_video"])){
             "nro_veces_visto_funnels"         => $_POST["nro_veces_visto_funnels"],
             "segundos_funnels"                => $segundos,
             "click_comprar_funnels"           => $click,
-            "fecha_primera_vista_funnels"     => "NOW()",
-            "fecha_update_funnels"            => "NOW()"
+            "fecha_primera_vista_funnels"     => $date,
+            "fecha_update_funnels"            => $date
         ];
 
         $actualizar = insert("tb_curso_funnels",$data);
