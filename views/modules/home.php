@@ -91,7 +91,7 @@
 				   
 				   echo 'TimeZonePHP default: ', date_default_timezone_get();
 
-				   date_default_timezone_set('America/Mexico_City');
+				   date_default_timezone_set('America/Caracas');
 				   setlocale(LC_TIME, 'es_MX.UTF-8');
 				   echo $fecha_actual=strftime("%Y-%m-%d");
 				   echo $hora_actual=strftime("%H:%M:%S");
