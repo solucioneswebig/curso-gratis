@@ -207,14 +207,13 @@ if(isset($_POST["verificar_correo"])){
 
     $buscar_numero_igual = select_one("SELECT * FROM tb_registro_curso where email_registrocurso ='".$_POST['verificar_correo']."'");
 
-    var_dump($buscar_numero_igual);
-    /*
     if($buscar_numero_igual){
+
         echo 1;
     }else{
         echo 0;
     }
-    */
+
 }
 
 function generarCodigo($longitud) {
