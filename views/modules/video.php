@@ -438,7 +438,7 @@ else:
             var distance = end - now;
             if (distance < 0) {
 
-              window.location = "https://webx.mx/oferta-expiro/"
+              window.location = "https://webx.mx/?oferta-expiro"
                 clearInterval(timer);
 
 
