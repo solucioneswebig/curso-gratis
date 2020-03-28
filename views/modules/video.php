@@ -368,8 +368,8 @@ if($date_start == "0000-00-00 00:00:00"){
   $mod_date = $date->format('m/d/Y h:i:s A');
 }
 
-$fecha1 = new DateTime();//fecha inicial
-$fecha2 = new DateTime($mod_date);//fecha de cierre
+$fecha1 = new DateTime($mod_date);//fecha inicial
+$fecha2 = new DateTime();//fecha de cierre
 
 $intervalo = $fecha1->diff($fecha2);
 
