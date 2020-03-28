@@ -17,7 +17,7 @@ if(isset($_POST["name"])){
 
         $id_registrocurso = id_registro("id_registrocurso","tb_registro_curso");
 
-        date_default_timezone_set('America/Mexico_City');
+        
 
         $date = date("Y-m-d H:i:s");
 
@@ -102,7 +102,7 @@ if(isset($_POST["name"])){
 if(isset($_POST["guardar_video"])){
 
   
-    date_default_timezone_set('America/Mexico_City');
+    
     $date = date("Y-m-d H:i:s");
 
     $data = [
@@ -127,7 +127,7 @@ if(isset($_POST["guardar_video"])){
 
     if($buscar_info["segundos_funnels"] != ""){
 
-        date_default_timezone_set('America/Mexico_City');
+       
         $date = date("Y-m-d H:i:s");
 
         if($_POST["segundos_funnels"] > $buscar_info["segundos_funnels"]){
