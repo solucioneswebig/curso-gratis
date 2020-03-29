@@ -87,16 +87,7 @@
         		<h6 class="text-center text-white sub-title2">En este Curso Online es 100% práctico, lo podrás ver desde tu casa o negocio, aprenderás a usar las Herramientas que Ofrece FACEBOOK para promover tu negocio, productos o servicios.</h6>
                  
                	<div class="col-md-12 m-auto">
-				   <?php
 
-					date_default_timezone_set('America/Mexico_city');
-
-					echo 'TimeZonePHP default: ', date_default_timezone_get()."<br>";
-					setlocale(LC_TIME, 'es_MX.UTF-8');
-					echo $fecha_actual=strftime("%Y-%m-%d")."<br>";
-					echo $hora_actual=strftime("%H:%M:%S");
-
-					?>
         		<form class="form_enviar"> 
         			<div class="form-group">
 				    <input type="text" class="form-control" id="name_form" name="name" placeholder="Nombre">
