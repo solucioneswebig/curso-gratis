@@ -99,8 +99,8 @@
 				    <input type="email" class="form-control requerido_correo" id="correo_form" name="email" placeholder="E-mail">
 				  </div>
 				  <div class="form-check">
-				    <input type="checkbox" class="form-check-input" name="check_cliente" id="exampleCheck1">
-				    <label class="form-check-label text-white" for="exampleCheck1"> Soy Cliente de Directorio El Regional o Webx.mx (Opcional)</label>
+				    <input type="hidden" name="check_cliente" id="escliente" value="0">
+				  
 				  </div>
 				  <div class="form-check">
 				    <input type="checkbox" class="form-check-input" name="check_terminos" id="check_terminos">
@@ -116,10 +116,10 @@
 	
 
 			<div class="col-md-12 text-center py-3">
-			       <!-- Button trigger modal -->
-						<button type="button" class="text-white btn-footer" data-toggle="modal" data-target="#staticBackdrop">
-				L			Quiero Acceder al Curso
-						</button>
+				<!-- Button trigger modal -->
+					<button type="button" class="text-white btn-footer" data-toggle="modal" data-target="#staticBackdrop">
+			L			Quiero Acceder al Curso
+					</button>
 					<button class="text-white btn-footer btn-forms" id="boton_guardar">Quiero Acceder al Curso</button>
 			</div>
         	</div>
@@ -130,30 +130,7 @@
 
 
 
-<!--MODAL-->
 
-<!-- Modal -->
-<div class="modal fade" id="staticBackdrop" data-backdrop="static" tabindex="-1" role="dialog" aria-labelledby="staticBackdropLabel" aria-hidden="true">
-  <div class="modal-dialog" role="document">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title" id="staticBackdropLabel"></h5>
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
-        </button>
-      </div>
-      <div class="modal-body">
-	  ¿Eres cliente Vigente del Directorio El Regional o Webx?
-      </div>
-      <div class="modal-footer justify-content-center">
-        <button type="button" class="btn btn-success btn-modal-m">SI</button>
-        <button type="button" class="btn btn-warning btn-modal-m">NO</button>
-      </div>
-    </div>
-  </div>
-</div>
-
-<!--FIN MODAL-->
 
 
 
@@ -228,69 +205,6 @@
 </section>
 
 
-<!--PARA PC
-<section class=" seccion-body">
-<div class="container pb-5">
-  <div class="row">
-      <div class="col-md-12">
-          <h2 class="text-center py-4 GothamNarrow-Bold">He trabajado y colaborado con:</h2>
-      </div>
-  </div>
-  <div class="row">
-	<div class="col-md-4 mb-2">
-				<div class="card-1 text-center">
-					<img class="img-fluid shadow" src="<?php echo $url_sitio; ?>assets/images/logo1.jpg">
-				</div>
-	</div>
-
-	<div class="col-md-4 mb-2">
-		        <div class="card-1 text-center">
-					<img class="img-fluid shadow" src="<?php echo $url_sitio; ?>assets/images/logo2.jpg">
-				</div>
-	</div>
-
-	<div class="col-md-4 mb-2">
-		        <div class="card-1 text-center">
-					<img class="img-fluid shadow" src="<?php echo $url_sitio; ?>assets/images/logo3.jpg">
-				</div>
-	</div>
-</div>
-</div>
-
-</section>
-<!--FIN PC-->
-
-
-
-<!--PARA MOBILE
-<section class="carrusel d-block d-sm-none fondo-gris seccion-body">
-		
-
-<div class="container">
-                <div class="row">
-                    <div class="col-md-12">
-                        <h2 class="text-center py-4 GothamNarrow-Bold">He trabajado y colaborado con:</h2>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-md-12">
-        		    	<div class="owl-carousel owl-theme">
-        				<div class="card mb-2">
-        					<img src="<?php echo $url_sitio; ?>assets/images/logo1.jpg" width="100%" height="250">
-        				</div>
-        				<div class="card mb-2">
-        					<img src="<?php echo $url_sitio; ?>assets/images/logo2.jpg" width="100%" height="250">
-        				</div>
-        				<div class="card mb-2">
-        					<img src="<?php echo $url_sitio; ?>assets/images/logo3.jpg" width="100%" height="250">
-        				</div>
-                        </div>                        
-                    </div>
-                </div>                
-   </div>
-</section>
--->
-<!--FIN MOBILE-->
 
 
 <section class="py-5 fondo-gris seccion-body">   
@@ -421,6 +335,33 @@ $(document).ready(function(){
 endif;
 ?>
 
+
+<script>
+
+$(document).ready(function(){
+
+	$(".btn-si").click(function(){
+
+		$("#escliente").val("1");
+		
+		/*
+		$("#boton_guardar").click();
+		*/
+	})
+
+	$(".btn-no").click(function(){
+		
+		$("#escliente").val("0");
+		/*
+		$("#boton_guardar").click();
+		*/
+	})
+
+})
+
+</script>
+
+
 <!-- Button trigger modal -->
 <button type="button" class="btn btn-primary" id="boton_modal" data-toggle="modal" data-target="#exampleModalCenter" style="display:none;">
   Launch demo modal
@@ -445,6 +386,32 @@ endif;
     </div>
   </div>
 </div>
+
+
+<!--MODAL-->
+
+<!-- Modal -->
+<div class="modal fade" id="staticBackdrop" data-backdrop="static" tabindex="-1" role="dialog" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="staticBackdropLabel"></h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+	  ¿Eres cliente Vigente del Directorio El Regional o Webx?
+      </div>
+      <div class="modal-footer justify-content-center">
+        <button type="button" class="btn btn-success btn-modal-m btn-si">SI</button>
+        <button type="button" class="btn btn-info btn-modal-m btn-no">NO</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!--FIN MODAL-->
 
 </body>
 </html>
