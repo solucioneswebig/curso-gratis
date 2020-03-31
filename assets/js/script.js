@@ -49,7 +49,9 @@ $.post(ruta_ajax+"assets/ajax/enviar.php",$(".form_enviar").serialize(),function
 $(".btn-acceso-modal").click(function(){
     if(validaForm_liderBanda()){
         console.log("OK")
-    } 
+    }else{
+        $('#staticBackdrop').modal('hide')
+    }
 })
 
 
