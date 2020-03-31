@@ -212,9 +212,11 @@
   display: none;
 }
 
-.btn-modal-m{
-  width: 40px !important;
+.btn-modal-m {
+  width: 100px !important;
+  text-align: center;
 }
+
 
 .fondo-transparent {
 background-color: #1a363d;
