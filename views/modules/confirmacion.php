@@ -8,19 +8,19 @@
     <meta charset="UTF-8" />
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <title>CURSO GRATIS - 3 Estratégias para Vender en Facebook</title> 
+    <title>CONFIRMACION DE CURSO GRATIS</title> 
        
-    <meta name="Description" content="CURSO ONLINE GRATUITO 3 ESTRATÉGIAS PARA PROMOCIONAR MÍ NEGOCIO EN FACEBOOK Y PODER AUMENTAR MIS VENTAS EN 2020."/>
-    <meta name="Keywords" content="CURSO GRATIS DE FACEBOOK, ESTRATEGIAS PARA VENDER EN FACEBOOK, CURSO ONLINE GRATUITO"/>
+    <meta name="Description" content="CONFIRMACION DE CURSO ONLINE GRATUITO 3 ESTRATÉGIAS PARA PROMOCIONAR MÍ NEGOCIO EN FACEBOOK Y PODER AUMENTAR MIS VENTAS EN 2020."/>
+    <meta name="Keywords" content="CONFIRMACION CURSO GRATIS DE FACEBOOK, ESTRATEGIAS PARA VENDER EN FACEBOOK, CURSO ONLINE GRATUITO"/>
     <meta name="author" content="webx.mx">
     <meta name="owner" content="novapage.net">
-    <meta name="robots" content="index, follow">
-    <meta property="og:title" content="CURSO GRATIS - 3 Estratégias para Vender en Facebook"/>
-    <meta property="og:description" content="CURSO ONLINE GRATUITO 3 ESTRATÉGIAS PARA PROMOCIONAR MÍ NEGOCIO EN FACEBOOK Y PODER AUMENTAR MIS VENTAS EN 2020."/>
+    <meta name="robots" content="noindex, nofollow">
+    <meta property="og:title" content="CONFIRMACION DE CURSO GRATIS"/>
+    <meta property="og:description" content="CONFIRMACION DE CURSO ONLINE GRATUITO 3 ESTRATÉGIAS PARA PROMOCIONAR MÍ NEGOCIO EN FACEBOOK Y PODER AUMENTAR MIS VENTAS EN 2020."/>
     <meta property="og:image" content="https://webx.mx//views/curso/assets/images/imagen-principal.png"/>
     <meta property="og:image:alt" content="PORTADA DE CURSO GRATIS"/>
     <meta property="og:type" content="website"/>
-    <meta property="og:site_name" content="CURSO GRATIS - 3 Estratégias para Vender en Facebook"/>
+    <meta property="og:site_name" content="CONFIRMACION DE CURSO GRATIS"/>
     <meta property="og:url" content="https://webx.mx/curso-gratis"/>
     
     <link  rel="icon"   href="https://webx.mx/favicon/favicon.png" type="image/png" />
@@ -75,8 +75,9 @@
         </div>
         <div class="row justify-content-center">
            <div class="col-md-6">
-              <h4 class="text-center">¡ATENCIÓN! << Te llegará un email como este en <strong class="linea">los próximos 5 minutos </strong> >></h4>
-                <h4 class="text-center py-2">Revisa tu <strong class="linea">bandeja de entrada</strong> y haz click en el enlace para confirmar tu email y acceder a la CURSO ONLINE :</h4>
+              <h2 class="text-center text-completa">¡ATENCIÓN! </h2>
+              <h4 class="text-center "><< Te llegará un email como se muestra en la imagen que está abajo en <strong class="linea">los próximos 5 minutos </strong> >></h4>
+                <h4 class="text-center py-2">Revisa tu <strong class="linea">Bandeja de Entrada o en Correos No Deseados o en Bandeja de SPAM</strong> y haz click en el recuadro Naranja para confirmar tu email y acceder a la CURSO ONLINE</h4>
            </div>
         </div>
         <div class="row justify-content-center">
@@ -86,6 +87,19 @@
         </div>
     </div>
 </section>
+
+<section >
+    <div class="container">
+        <div class="row justify-content-center py-4">
+          <div class="col-md-6 red">
+           <h3 class="text-center text-white">Si no te llega el Email puedes contactarnos en<br>
+              admin@webx.mx
+              </h3>
+           </div>
+        </div>
+    </div>
+</section>
+
 
 <section>
 <div class="container">
@@ -99,17 +113,6 @@
 
 </section>
 
-<section class="red">
-    <div class="container">
-        <div class="row justify-content-center py-4">
-          <div class="col-md-6">
-           <h3 class="text-center text-white">Si no te llega revisa tu bandeja de PROMOCIONES o SPAM o contacta con nosotros en <br>
-              admin@webx.mx
-              </h3>
-           </div>
-        </div>
-    </div>
-</section>
 
 <section class="footer">
 	<div class="container">
