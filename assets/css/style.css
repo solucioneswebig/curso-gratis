@@ -220,8 +220,10 @@ background-color: #1a363d;
     width: 50% !important;
     border-radius: 100%;
     margin: auto;
-    text-shadow: 2px 2px 2px #002;
     box-shadow: 2px 2px 12px #888;
+    height: 100px !important;
+    width: 100px !important;
+    object-fit: cover;   
 }
 
 .card-text{
