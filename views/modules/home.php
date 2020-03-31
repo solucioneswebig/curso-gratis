@@ -311,7 +311,7 @@
             				    <p class="card-text">Con Webx tuvimos la oportunidad de dar a conocer nuestros bungalows en regiones del estado a las que no teníamos alcance. La publicidad y la exposición que continuamos teniendo nos ha abierto las puertas a un mercado mayor al que originalmente teníamos. Lo mejor de todo, es que los beneficios no solamente se van a ver en el corto y mediano plazo, sino también en el largo plazo.</p>
             				  </div>
             
-            				   <img class="card-images" src="<?php echo $url_sitio; ?>assets/images/Bungalow5_Bedroom1.jpeg" alt="Card image cap" width="100px" height="100px">
+            				   <img class="card-images" src="<?php echo $url_sitio; ?>assets/images/Bungalow5_Bedroom1.jpeg" alt="Card image cap" width="100px" style="height: 100px !important;">
             				    <p class="text-center text-name">Hector Corona  </p>
             				  <p class="text-center">	Melaque, Jalisco</p>
             				</div>
@@ -327,7 +327,7 @@
                             Y claro que todo esto no lo es todo, han sido muchas las personas que nos han visitado Gracias a la recomendación de quienes ya nos conocen.
                             Para nosotros es muy importante plasmar la información en nuestra página web actualizada y verídica, siendo esta lo más clara y verás para nuestros clientes. </p>
             				  </div>
-            				   <img class="card-images" src="<?php echo $url_sitio; ?>assets/images/FILEminimizer.jpg" alt="Card image cap" width="100px" height="100px">
+            				   <img class="card-images" src="<?php echo $url_sitio; ?>assets/images/FILEminimizer.jpg" alt="Card image cap" width="100px" style="height: 100px !important;">
             				   <p class="text-center text-name">Carmen Ramos  </p>
             				   <p class="text-center">  Autlán de Navarro, Jalisco</p>  
             				</div>	
@@ -340,7 +340,7 @@
             				    <p class="card-text">Estoy muy conforme con el servicio, el poder actualizar mi página tan fácil me permite estar más cerca de nuestros clientes ofreciendo nuestros servicios las 24 horas.</p>
             				  </div>
             
-            				  <img class="card-images" src="<?php echo $url_sitio; ?>assets/images/estetica-barberia-fashion-look.jpeg" alt="Card image cap" width="100px" height="100px">
+            				  <img class="card-images" src="<?php echo $url_sitio; ?>assets/images/estetica-barberia-fashion-look.jpeg" alt="Card image cap" width="100px" style="height: 100px !important;">
             				  <p class="text-center text-name">Martha Candelario</p>
             				  <p class="text-center">Autlán de Navarro, Jalisco</p>
             				</div>
