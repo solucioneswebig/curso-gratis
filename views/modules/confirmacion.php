@@ -1,6 +1,5 @@
 <?php 
 //$url_sitio    = $ruta_second."/views/curso/";
-
 ?>
 <!DOCTYPE html>
 <html lang="es">
