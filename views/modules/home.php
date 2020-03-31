@@ -145,9 +145,9 @@
       <div class="modal-body">
 	  ¿Eres cliente Vigente del Directorio El Regional o Webx?
       </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-secondary">SI</button>
-        <button type="button" class="btn btn-primary">NO</button>
+      <div class="modal-footer justify-content-center">
+        <button type="button" class="btn btn-secondary btn-modal-m">SI</button>
+        <button type="button" class="btn btn-primary btn-modal-m">NO</button>
       </div>
     </div>
   </div>

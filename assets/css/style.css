@@ -212,6 +212,10 @@
   display: none;
 }
 
+.btn-modal-m{
+  width: 40px !important;
+}
+
 .fondo-transparent {
 background-color: #1a363d;
 }
