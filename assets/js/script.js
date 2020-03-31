@@ -46,6 +46,15 @@ $.post(ruta_ajax+"assets/ajax/enviar.php",$(".form_enviar").serialize(),function
 }
 });
 
+$(".btn-acceso-modal").click(function(){
+    if(validaForm_liderBanda()){
+        console.log("OK")
+    } 
+})
+
+
+
+
     function guadar_video(){ 
     $.post(ruta_ajax+"assets/ajax/enviar.php",$(".form_enviar_video").serialize(),function(res){
     
