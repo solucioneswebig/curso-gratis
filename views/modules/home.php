@@ -344,17 +344,17 @@ $(document).ready(function(){
 
 		$("#escliente").val("1");
 		
-		/*
+
 		$("#boton_guardar").click();
-		*/
+		
 	})
 
 	$(".btn-no").click(function(){
 		
 		$("#escliente").val("0");
-		/*
+	
 		$("#boton_guardar").click();
-		*/
+	
 	})
 
 })

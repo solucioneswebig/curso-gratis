@@ -21,12 +21,6 @@ if(isset($_POST["name"])){
 
         $date = date("Y-m-d H:i:s");
 
-        if(isset($_POST["check_cliente"])){
-            $cliente = 1;
-        }else{
-            $cliente = 0;
-        }
-
         $code = generarCodigo(7).$id_registrocurso."x";
 
         $data = [
@@ -36,7 +30,7 @@ if(isset($_POST["name"])){
             "email_registrocurso"    => $_POST["email"],
             "code_registrocurso"     => $code,
             "view_registrocurso"     => 0,
-            "cliente_registrocurso"  => $cliente,
+            "cliente_registrocurso"  => $_POST["check_cliente"],
             "estatus_registrocurso"  => 1,
             "date_registrocurso"     => $date,
             "date_modified"          => "0000-00-00 00:00:00"
