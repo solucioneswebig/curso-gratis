@@ -50,7 +50,13 @@ $(".btn-acceso-modal").click(function(){
     if(validaForm_liderBanda()){
         console.log("OK")
     }else{
-        $('#staticBackdrop').modal('hide')
+        function explode(){
+        $('#staticBackdrop').modal('hide');
+        }
+        setTimeout(explode, 2000);
+          
+        
+
     }
 })
 
