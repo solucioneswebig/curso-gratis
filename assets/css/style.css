@@ -208,6 +208,10 @@
     padding: 20px 26px;
 }
 
+.btn-forms{
+  display: none;
+}
+
 .fondo-transparent {
 background-color: #1a363d;
 }
