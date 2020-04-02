@@ -146,11 +146,6 @@
   background-color: #a2a2a2 !important;
 }
 
-.col-md-4.border-precio {
-    border: 3px solid #1a4b98;
-    border-radius: 15px;
-}
-
 .boton-comprar{
       color: #FFFFFF;
     font-size: 24px;
@@ -409,6 +404,11 @@ background-color: #1a363d;
   font-size: 40px;
 }
 
+.col-md-4.border-precio {
+    border: 3px solid #1a4b98;
+    border-radius: 15px;
+}
+
 .text-pequeno-0{
   font-size: 44px;
   font-weight: 800;
@@ -439,6 +439,12 @@ background-color: #1a363d;
   margin: 0;
 }
 
+.text-pequeno-4 {
+    font-size: 30px;
+    font-weight: 800;
+    margin: 0;
+    color: #1a4b98;
+}
 
 .tex-mediano {
     font-size: 50px;
