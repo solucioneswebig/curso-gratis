@@ -118,9 +118,9 @@
 			<div class="col-md-12 text-center py-3">
 				<!-- Button trigger modal -->
 					<button type="button" class="text-white btn-footer btn-acceso-modal" data-toggle="modal" data-target="#staticBackdrop">
-			L			Quiero Acceder al Curso
+						Quiero Acceder al Curso
 					</button>
-					<button class="text-white btn-footer btn-forms" id="boton_guardar">Quiero Acceder al Curso</button>
+					<button class="text-white btn-footer btn-forms d-none" id="boton_guardar">Quiero Acceder al Curso</button>
 			</div>
         	</div>
         </div>

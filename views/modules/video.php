@@ -58,6 +58,7 @@
       </div>
     </div>
   </div>
+  <a href="https://wa.me/523171233811?text=Me%20gustaría%20saber%20el%20precio%20de%20la%20pagina" class="whatsapp" target="_blank"> <i class="fa fa-whatsapp whatsapp-icon"></i></a>
 </section>
 
 
@@ -67,6 +68,8 @@
           <div class="col-md-10">
               <h2 class="text-center text-white text-completa">LAS 3 ESTRATÉGIAS PARA PROMOCIONAR MÍ NEGOCIO EN <strong class="text-warning">FACEBOOK</strong></h2>
               <h3 class="text-center text-warning pt-4">Y PODER DUPLICAR TUS VENTAS EN 2020.</h3>   
+
+              <h4 class="text-center text-warning pt-4 text-uppercase">Reproduce el vídeo para iniciar el curso.</h4>
           </div>
         </div>
         <div class="row py-3 justify-content-center" id="area_video">
@@ -212,8 +215,14 @@
                 <div class="col-md-8">
                   <H3 class="text-center tex-mediano">PÁGINA WEB COMPLETA</H3>
                   <p class="text-pequeno pt-3 text-center">PRECIO ESPECIAL</p>
+                  
                   <h4 class="text-grande text-center">$ 949 <small class="pequeno">IVA INCLUIDO</small></h4>
                   <h4 class="text-center" style="color:#ca611f">Precio Normal $ 1,315</h4>
+
+                  <p class="text-pequeno-0  text-center">Paga a 12 Meses</p>  
+                  <p class="text-pequeno-1  text-center">Sin Intereses</p>  
+                  <p class="text-pequeno-2  text-center">Participan todos los bancos</p>
+                  <p class="text-pequeno-3 text-center text-danger">12 Pagos de 79.08 c/u</p>
                 </div>
             </div>
             <div class="row py-4 justify-content-center">
@@ -299,6 +308,12 @@
                   <p class="text-pequeno pt-3 text-center">PRECIO ESPECIAL</p>
                   <h4 class="text-grande text-center">$ 949 <small class="pequeno">IVA INCLUIDO</small></h4>
                   <h4 class="text-center" style="color:#ca611f">Precio Normal $ 1,315</h4>
+
+                  
+                  <p class="text-pequeno-0  text-center">Paga a 12 Meses</p>   
+                  <p class="text-pequeno-1  text-center">Sin Intereses</p> 
+                  <p class="text-pequeno-2  text-center">Participan todos los bancos</p>
+                  <p class="text-pequeno-3  text-center text-danger">12 Pagos de 79.08 c/u</p>
                 </div>
             </div>
             <div class="row py-4 justify-content-center">
@@ -379,6 +394,8 @@ $url_video = $ruta_second."/curso-gratis/debe-registrarse/";
 
 
 ?>
+
+
 <script>
   window.location = "https://webx.mx/curso-gratis/debe-registrarse/"
 </script>
@@ -465,7 +482,7 @@ else:
         timer = setInterval(showRemaining, 1000);
     </script>
 
-  <script type="text/javascript">
+<script type="text/javascript">
 (function(){function $MPC_load(){window.$MPC_loaded !== true && (function(){var s = document.createElement("script");s.type = "text/javascript";s.async = true;s.src = document.location.protocol+"//secure.mlstatic.com/mptools/render.js";var x = document.getElementsByTagName('script')[0];x.parentNode.insertBefore(s, x);window.$MPC_loaded = true;})();}window.$MPC_loaded !== true ? (window.attachEvent ?window.attachEvent('onload', $MPC_load) : window.addEventListener('load', $MPC_load, false)) : null;})();
 </script>
 </body>
