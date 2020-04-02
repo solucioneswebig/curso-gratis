@@ -304,6 +304,9 @@
                   <p class="text-pequeno pt-3 text-center">PRECIO ESPECIAL</p>
                   <h4 class="text-grande text-center">$ 949 <small class="pequeno">IVA INCLUIDO</small></h4>
                   <h4 class="text-center" style="color:#ca611f">Precio Normal $ 1,315</h4>
+
+                  <p class="text-grande pt-3 text-center">A 12 Meses Sin Intereses</p>
+                  <p class="text-pequeno text-center text-danger">12 Pagos de 79.08 c/u</p>
                 </div>
             </div>
             <div class="row py-4 justify-content-center">
