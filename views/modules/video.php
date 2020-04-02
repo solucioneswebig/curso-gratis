@@ -214,9 +214,9 @@
                 <div class="col-md-8">
                   <H3 class="text-center tex-mediano">PÁGINA WEB COMPLETA</H3>
                   <p class="text-pequeno pt-3 text-center">PRECIO ESPECIAL</p>
-                  <!--
+                  
                   <h4 class="text-grande text-center">$ 949 <small class="pequeno">IVA INCLUIDO</small></h4>
-                  <h4 class="text-center" style="color:#ca611f">Precio Normal $ 1,315</h4> -->
+                  <h4 class="text-center" style="color:#ca611f">Precio Normal $ 1,315</h4>
 
                   <p class="text-pequeno-0  text-center">Paga a 12 Meses</p>  
                   <p class="text-pequeno-1  text-center">Sin Intereses</p>  
