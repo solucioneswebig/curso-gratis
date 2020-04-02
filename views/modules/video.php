@@ -324,17 +324,34 @@
                 <div class="col-md-8">
                   <p class="text-pequeno pt-3 text-center">Dale Imagen a tu Negocio en Internet con una</p>   
                   <H4 class="text-center tex-mediano">PÁGINA WEB COMPLETA</H4>
-                  <p class="text-pequeno pt-3 text-center">PRECIO ESPECIAL</p>
-                  <h4 class="text-grande text-center">$ 949 <small class="pequeno">IVA INCLUIDO</small></h4>
-                  <h4 class="text-center" style="color:#ca611f">Precio Normal $ 1,315</h4>
 
-                  
-                  <p class="text-pequeno-0  text-center">Paga a 12 Meses</p>   
-                  <p class="text-pequeno-1  text-center">Sin Intereses</p> 
-                  <p class="text-pequeno-2  text-center">Participan todos los bancos</p>
-                  <p class="text-pequeno-3  text-center text-danger">12 Pagos de 79.08 c/u</p>
-                </div>
+            <div class="row justify-content-center">
+              <div class="col-md-4 border-precio">
+                <p class="text-pequeno pt-3 text-center">PRECIO ESPECIAL</p>
+                <h4 class="text-grande text-center text-danger">$ 949 <small class="pequeno text-dark">IVA INCLUIDO</small></h4>
+                  <h4 class="text-center text-uppercase pb-3" style="color:#ca611f">Precio Normal $ 1,315</h4>
+              </div>
             </div>
+
+            <div class="row justify-content-center text-center pt-2">
+              <div class="col-md-4">
+                  <p class="text-pequeno-0  text-center">Paga a 12 Meses</p>  
+                  <p class="text-pequeno-1  text-center">Sin Intereses</p>  
+                  <p class="text-pequeno-2  text-center">Participan todos los bancos</p>
+                  <p class="text-pequeno-3 text-center text-danger">12 Pagos de 79.08 c/u</p>
+              </div>
+              <div class="col-md-1">
+                <p class="font-weight-bold m-auto py-5 letra-sola">O</p>
+              </div>
+              <div class="col-md-4">
+                 <p class="text-pequeno-0  text-center">Paga en</p>  
+                 <p class="text-pequeno-1  text-center">Efectivo</p> 
+                 <p class="text-pequeno-2  text-center">o</p>
+                 <p class="text-pequeno-4  text-center">Transferencia</p>
+              </div>
+            </div>
+
+
             <div class="row py-4 justify-content-center">
                 <div class="col-md-12 text-center">
                      <a mp-mode="dftl" href="https://www.mercadopago.com.mx/checkout/v1/redirect?pref_id=267062669-916f87a7-7f93-4434-bde3-5ee72572f748" name="MP-payButton" class='btn boton-comprar click_comprar'>Comprar Ahora</a>
