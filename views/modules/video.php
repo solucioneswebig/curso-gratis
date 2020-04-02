@@ -226,16 +226,16 @@
             </div>
 
             <div class="row justify-content-center text-center pt-2">
-              <div class="col-md-3">
+              <div class="col-md-4">
                   <p class="text-pequeno-0  text-center">Paga a 12 Meses</p>  
                   <p class="text-pequeno-1  text-center">Sin Intereses</p>  
                   <p class="text-pequeno-2  text-center">Participan todos los bancos</p>
                   <p class="text-pequeno-3 text-center text-danger">12 Pagos de 79.08 c/u</p>
               </div>
               <div class="col-md-1">
-                <p class="font-weight-bold m-auto py-5">O</p>
+                <p class="font-weight-bold m-auto py-5 letra-sola">O</p>
               </div>
-              <div class="col-md-3">
+              <div class="col-md-4">
                  <p class="text-pequeno-0  text-center">Paga en</p>  
                  <p class="text-pequeno-1  text-center">Efectivo</p> 
                  <p class="text-pequeno-2  text-center">o</p>

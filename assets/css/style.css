@@ -391,6 +391,10 @@ background-color: #1a363d;
   max-width: 380px;
 }
 
+.letra-sola{
+  font-size: 25px;
+}
+
 .texto{
   font-size: 30px;
 }
