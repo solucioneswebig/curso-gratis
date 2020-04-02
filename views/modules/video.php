@@ -220,26 +220,26 @@
             <div class="row justify-content-center">
               <div class="col-md-4 border-precio">
                 <p class="text-pequeno pt-3 text-center">PRECIO ESPECIAL</p>
-                <h4 class="text-grande text-center">$ 949 <small class="pequeno">IVA INCLUIDO</small></h4>
-                  <h4 class="text-center" style="color:#ca611f">Precio Normal $ 1,315</h4>
+                <h4 class="text-grande text-center text-danger">$ 949 <small class="pequeno text-dark">IVA INCLUIDO</small></h4>
+                  <h4 class="text-center text-uppercase pb-3" style="color:#ca611f">Precio Normal $ 1,315</h4>
               </div>
             </div>
 
-            <div class="row justify-content-center">
-              <div class="col-md-4">
+            <div class="row justify-content-center text-center">
+              <div class="col-md-3">
                   <p class="text-pequeno-0  text-center">Paga a 12 Meses</p>  
                   <p class="text-pequeno-1  text-center">Sin Intereses</p>  
                   <p class="text-pequeno-2  text-center">Participan todos los bancos</p>
                   <p class="text-pequeno-3 text-center text-danger">12 Pagos de 79.08 c/u</p>
               </div>
-              <div class="col-md-2 m-auto">
+              <div class="col-md-1 m-auto">
                 <p class="font-weight-bold">O</p>
               </div>
-              <div class="col-md-4">
+              <div class="col-md-3">
                  <p class="text-pequeno-0  text-center">Paga en</p>  
                  <p class="text-pequeno-1  text-center">Efectivo</p> 
                  <p class="text-pequeno-2  text-center">o</p>
-                 <p class="text-pequeno-4  text-center">Participan todos los bancos</p>
+                 <p class="text-pequeno-3  text-center">Transferencia</p>
               </div>
             </div>
                   

@@ -146,6 +146,11 @@
   background-color: #a2a2a2 !important;
 }
 
+.col-md-4.border-precio {
+    border: 3px solid #1a4b98;
+    border-radius: 15px;
+}
+
 .boton-comprar{
       color: #FFFFFF;
     font-size: 24px;
