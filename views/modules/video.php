@@ -67,6 +67,8 @@
           <div class="col-md-10">
               <h2 class="text-center text-white text-completa">LAS 3 ESTRATÉGIAS PARA PROMOCIONAR MÍ NEGOCIO EN <strong class="text-warning">FACEBOOK</strong></h2>
               <h3 class="text-center text-warning pt-4">Y PODER DUPLICAR TUS VENTAS EN 2020.</h3>   
+
+              <h4 class="text-center text-warning pt-4">Reproduce el vídeo para iniciar el curso.</h4>
           </div>
         </div>
         <div class="row py-3 justify-content-center" id="area_video">
