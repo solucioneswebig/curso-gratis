@@ -365,18 +365,23 @@ background-color: #1a363d;
   font-weight: 800;
   margin: 0;
   margin-bottom: -22px;
+  color: #555;
 }
 
 .text-pequeno-1 {
+
   font-size: 58px;
   font-weight: 800;
   margin: 0;
   margin-bottom: -10px;
+  color: #1a4b98;
+
 }
 .text-pequeno-2 {
   font-size: 26px;
   font-weight: 800;
   margin: 0;
+  color: #555;
 }
 
 .text-pequeno-3{
