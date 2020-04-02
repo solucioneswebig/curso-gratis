@@ -324,7 +324,8 @@
                 <div class="col-md-8">
                   <p class="text-pequeno pt-3 text-center">Dale Imagen a tu Negocio en Internet con una</p>   
                   <H4 class="text-center tex-mediano">PÁGINA WEB COMPLETA</H4>
-
+             </div>
+           </div>
             <div class="row justify-content-center">
               <div class="col-md-4 border-precio">
                 <p class="text-pequeno pt-3 text-center">PRECIO ESPECIAL</p>
