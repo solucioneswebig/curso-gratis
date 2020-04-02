@@ -364,13 +364,14 @@ background-color: #1a363d;
   font-size: 44px;
   font-weight: 800;
   margin: 0;
+  margin-bottom: -22px;
 }
 
 .text-pequeno-1 {
   font-size: 58px;
   font-weight: 800;
   margin: 0;
-  margin-bottom: -21px;
+  margin-bottom: -10px;
 }
 .text-pequeno-2 {
   font-size: 26px;
