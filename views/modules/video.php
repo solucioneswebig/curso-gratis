@@ -239,7 +239,7 @@
                  <p class="text-pequeno-0  text-center">Paga en</p>  
                  <p class="text-pequeno-1  text-center">Efectivo</p> 
                  <p class="text-pequeno-2  text-center">o</p>
-                 <p class="text-pequeno-3  text-center">Transferencia</p>
+                 <p class="text-pequeno-4  text-center">Transferencia</p>
               </div>
             </div>
                   
