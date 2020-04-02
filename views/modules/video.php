@@ -217,9 +217,9 @@
                   <h4 class="text-grande text-center">$ 949 <small class="pequeno">IVA INCLUIDO</small></h4>
                   <h4 class="text-center" style="color:#ca611f">Precio Normal $ 1,315</h4>
 
-                  <p class="text-grande pt-3 text-center">Paga a 12 Meses</p>
-                  <p class="text-pequeno-1 pt-3 text-center">Sin Intereses</p>
-                  <p class="text-pequeno-2 pt-3 text-center">Participan todos los bancos</p>
+                  <p class="text-pequeno-1  text-center">Sin Intereses</p>
+                  <p class="text-pequeno-0 pt-3 text-center">Paga a 12 Meses</p>    
+                  <p class="text-pequeno-2  text-center">Participan todos los bancos</p>
                   <p class="text-pequeno-3 text-center text-danger">12 Pagos de 79.08 c/u</p>
                 </div>
             </div>
@@ -307,8 +307,8 @@
                   <h4 class="text-grande text-center">$ 949 <small class="pequeno">IVA INCLUIDO</small></h4>
                   <h4 class="text-center" style="color:#ca611f">Precio Normal $ 1,315</h4>
 
-                  <p class="text-pequeno-0 pt-3 text-center">Paga a 12 Meses</p>
                   <p class="text-pequeno-1  text-center">Sin Intereses</p>
+                  <p class="text-pequeno-0 pt-3 text-center">Paga a 12 Meses</p>    
                   <p class="text-pequeno-2  text-center">Participan todos los bancos</p>
                   <p class="text-pequeno-3 text-center text-danger">12 Pagos de 79.08 c/u</p>
                 </div>
