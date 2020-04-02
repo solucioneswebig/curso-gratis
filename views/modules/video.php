@@ -68,7 +68,7 @@
               <h2 class="text-center text-white text-completa">LAS 3 ESTRATÉGIAS PARA PROMOCIONAR MÍ NEGOCIO EN <strong class="text-warning">FACEBOOK</strong></h2>
               <h3 class="text-center text-warning pt-4">Y PODER DUPLICAR TUS VENTAS EN 2020.</h3>   
 
-              <h4 class="text-center text-warning pt-4">Reproduce el vídeo para iniciar el curso.</h4>
+              <h4 class="text-center text-warning pt-4 text-uppercase">Reproduce el vídeo para iniciar el curso.</h4>
           </div>
         </div>
         <div class="row py-3 justify-content-center" id="area_video">
@@ -381,6 +381,8 @@ $url_video = $ruta_second."/curso-gratis/debe-registrarse/";
 
 
 ?>
+
+
 <script>
   window.location = "https://webx.mx/curso-gratis/debe-registrarse/"
 </script>
@@ -467,7 +469,7 @@ else:
         timer = setInterval(showRemaining, 1000);
     </script>
 
-  <script type="text/javascript">
+<script type="text/javascript">
 (function(){function $MPC_load(){window.$MPC_loaded !== true && (function(){var s = document.createElement("script");s.type = "text/javascript";s.async = true;s.src = document.location.protocol+"//secure.mlstatic.com/mptools/render.js";var x = document.getElementsByTagName('script')[0];x.parentNode.insertBefore(s, x);window.$MPC_loaded = true;})();}window.$MPC_loaded !== true ? (window.attachEvent ?window.attachEvent('onload', $MPC_load) : window.addEventListener('load', $MPC_load, false)) : null;})();
 </script>
 </body>
