@@ -361,8 +361,19 @@ background-color: #1a363d;
 }
 
 .text-pequeno-1{
-  font-size: 36px;
+  font-size: 40px;
+  font-weight: 800;
 }
+.text-pequeno-2{
+  font-size: 36px;
+  font-weight: 800;
+}
+
+.text-pequeno-3{
+  font-size: 32px;
+  font-weight: 800;
+}
+
 
 .tex-mediano {
     font-size: 50px;
