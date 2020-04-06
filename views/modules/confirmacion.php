@@ -1,6 +1,5 @@
 <?php 
 //$url_sitio    = $ruta_second."/views/curso/";
-
 ?>
 <!DOCTYPE html>
 <html lang="es">
@@ -23,8 +22,9 @@
     <meta property="og:site_name" content="CONFIRMACION DE CURSO GRATIS"/>
     <meta property="og:url" content="https://webx.mx/curso-gratis"/>
     
-    <link  rel="icon"   href="https://webx.mx/favicon/favicon.png" type="image/png" />
-    
+    <link  rel = "icono de acceso directo"  href = "favicon/favicon.ico"  type = "image / x-icon" > 
+    <link  rel = "icon"  href = "favicon/favicon.ico"  type = "image / x-icon" >
+   
     
     <!-- Bootstrap -->
     <link rel="stylesheet" href="<?php echo $url_sitio; ?>extensions/bootstrap/css/bootstrap.css">
