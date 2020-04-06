@@ -217,6 +217,7 @@
                   <H3 class="text-center tex-mediano">PÁGINA WEB COMPLETA</H3>
                    </div>
             </div>
+<<<<<<< HEAD
 
             <div class="row justify-content-center">
               <div class="col-md-4 border-precio">
@@ -226,6 +227,17 @@
               </div>
             </div>
 
+=======
+
+            <div class="row justify-content-center">
+              <div class="col-md-4 border-precio">
+                <p class="text-pequeno pt-3 text-center">PRECIO ESPECIAL</p>
+                <h4 class="text-grande text-center text-danger">$ 949 <small class="pequeno text-dark">IVA INCLUIDO</small></h4>
+                  <h4 class="text-center text-uppercase pb-3" style="color:#ca611f">Precio Normal $ 1,315</h4>
+              </div>
+            </div>
+
+>>>>>>> 3e2204668169a840a86387917e30c8804644d608
             <div class="row justify-content-center text-center pt-2">
               <div class="col-md-4">
                   <p class="text-pequeno-0  text-center">Paga a 12 Meses</p>  
